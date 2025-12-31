@@ -1024,20 +1024,35 @@
             const badge = document.getElementById('form-mode-badge');
             const idField = document.getElementById('edit-task-id');
 
-            // Reset Fields
-            document.getElementById('new-cat').value = '';
-            document.getElementById('new-task').value = '';
+            // Null check - if form elements don't exist
+            if (!form || !title || !btn || !badge || !idField) {
+                console.error('Task form elements not found');
+                alert('양식을 찾을 수 없습니다. "업무 검색 및 관리" 메뉴로 이동해주세요.');
+                return;
+            }
 
-            // Re-populate dropdowns to ensure latest names
+            // Reset Fields
+            const catEl = document.getElementById('new-cat');
+            const taskEl = document.getElementById('new-task');
             const mainSelect = document.getElementById('new-main');
             const subSelect = document.getElementById('new-sub');
 
-            const roleOptions = appData.roles.map(r => `<option value = "${r.id}" > ${r.title}</option > `).join('');
-            mainSelect.innerHTML = roleOptions;
-            subSelect.innerHTML = `<option value = "" > (선택 안함)</option > ` + roleOptions;
+            if (!catEl || !taskEl || !mainSelect || !subSelect) {
+                console.error('Task input elements not found');
+                alert('양식을 찾을 수 없습니다. "업무 검색 및 관리" 메뉴로 이동해주세요.');
+                return;
+            }
 
-            document.getElementById('new-main').selectedIndex = 0;
-            document.getElementById('new-sub').selectedIndex = 0;
+            catEl.value = '';
+            taskEl.value = '';
+
+            // Re-populate dropdowns to ensure latest names
+            const roleOptions = appData.roles.map(r => `<option value="${r.id}">${r.title}</option>`).join('');
+            mainSelect.innerHTML = roleOptions;
+            subSelect.innerHTML = `<option value="">(선택 안함)</option>` + roleOptions;
+
+            mainSelect.selectedIndex = 0;
+            subSelect.selectedIndex = 0;
             idField.value = '';
 
             if (mode === 'edit' && data) {
@@ -1046,10 +1061,10 @@
                 btn.className = "bg-green-600 text-white px-6 py-2 rounded text-sm font-bold hover:bg-green-700 shadow-sm";
                 badge.classList.remove('hidden');
 
-                document.getElementById('new-cat').value = data.category;
-                document.getElementById('new-task').value = data.task;
-                document.getElementById('new-main').value = data.main;
-                document.getElementById('new-sub').value = data.sub;
+                catEl.value = data.category;
+                taskEl.value = data.task;
+                mainSelect.value = data.main;
+                subSelect.value = data.sub;
                 idField.value = data.id;
             } else {
                 title.innerHTML = '<span class="text-xl mr-2">✍️</span> 신규 업무 배정';
