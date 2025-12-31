@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>한국경찰학원 조직 운영 매뉴얼 & 업무 분장</title>
+    <title>?�국경찰?�원 조직 ?�영 매뉴??& ?�무 분장</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <style>
@@ -107,7 +107,7 @@
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
                         <span class="text-xl font-bold text-slate-800 cursor-pointer"
-                            onclick="loadView('dashboard')">🏛️ 한국경찰학원 운영본부</span>
+                            onclick="loadView('dashboard')">?���??�국경찰?�원 ?�영본�?</span>
                     </div>
                     <div class="hidden sm:ml-6 sm:flex sm:space-x-8" id="nav-container">
                         <!-- Nav items injected by JS -->
@@ -115,9 +115,9 @@
                 </div>
                 <div class="flex items-center space-x-2">
                     <div id="sync-indicator" class="hidden md:block text-xs text-gray-500"></div>
-                    <div id="ai-status" class="hidden md:block text-xs text-indigo-600 font-bold animate-pulse">✨ Gemini
+                    <div id="ai-status" class="hidden md:block text-xs text-indigo-600 font-bold animate-pulse">??Gemini
                         3.0</div>
-                    <button onclick="openApiSettings()" class="text-stone-400 hover:text-stone-600" title="API 설정">
+                    <button onclick="openApiSettings()" class="text-stone-400 hover:text-stone-600" title="API ?�정">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -126,7 +126,7 @@
                                 d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                     </button>
-                    <span class="text-sm text-stone-500 bg-stone-100 px-3 py-1 rounded-full">총괄 부원장 모드</span>
+                    <span class="text-sm text-stone-500 bg-stone-100 px-3 py-1 rounded-full">총괄 부?�장 모드</span>
                 </div>
             </div>
         </div>
@@ -143,31 +143,31 @@
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 flex items-center justify-center">
             <div class="relative mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
                 <div class="mt-3 text-center">
-                    <h3 class="text-lg leading-6 font-medium text-gray-900">🔑 시스템 설정</h3>
+                    <h3 class="text-lg leading-6 font-medium text-gray-900">?�� ?�스???�정</h3>
                     <div class="mt-2 px-7 py-3">
                         <!-- Gemini API Key -->
                         <div class="mb-4">
                             <p class="text-sm text-gray-500 mb-2 text-left">
-                                <strong>AI 기능 (선택)</strong><br>
-                                Google Gemini API 키를 입력하면 AI 기능을 사용할 수 있습니다.
+                                <strong>AI 기능 (?�택)</strong><br>
+                                Google Gemini API ?��? ?�력?�면 AI 기능???�용?????�습?�다.
                             </p>
                             <input type="password" id="api-key-input" class="w-full p-2 border rounded text-sm mb-2"
-                                placeholder="Gemini API Key 입력">
+                                placeholder="Gemini API Key ?�력">
                             <a href="https://aistudio.google.com/app/apikey" target="_blank"
-                                class="text-xs text-blue-500 hover:underline">API 키 발급받기 (무료)</a>
+                                class="text-xs text-blue-500 hover:underline">API ??발급받기 (무료)</a>
                         </div>
 
                         <!-- Google Sheets Web App URL -->
                         <div class="mb-4 border-t pt-4">
                             <p class="text-sm text-gray-500 mb-2 text-left">
-                                <strong>Google Sheets 동기화 (필수)</strong><br>
-                                여러 기기에서 데이터를 공유하려면 Web App URL을 입력하세요.
+                                <strong>Google Sheets ?�기??(?�수)</strong><br>
+                                ?�러 기기?�서 ?�이?��? 공유?�려�?Web App URL???�력?�세??
                             </p>
                             <input type="text" id="sheets-url-input" class="w-full p-2 border rounded text-sm mb-2"
                                 placeholder="https://script.google.com/macros/s/...">
                             <button onclick="testSheetsConnection()"
                                 class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded hover:bg-green-200 w-full">
-                                연결 테스트
+                                ?�결 ?�스??
                             </button>
                             <div id="sheets-test-result" class="text-xs mt-2 hidden"></div>
                         </div>
@@ -175,11 +175,11 @@
                     <div class="items-center px-4 py-3">
                         <button onclick="saveSettings()"
                             class="px-4 py-2 bg-indigo-600 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-300">
-                            저장 및 연결
+                            ?�??�??�결
                         </button>
                         <button onclick="closeApiSettings()"
                             class="mt-2 px-4 py-2 bg-gray-100 text-gray-700 text-base font-medium rounded-md w-full shadow-sm hover:bg-gray-200 focus:outline-none">
-                            닫기
+                            ?�기
                         </button>
                     </div>
                 </div>
@@ -192,7 +192,7 @@
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
             <p class="text-center text-sm text-stone-400">Korea Police Academy Internal Operation System V3.3 Standalone
             </p>
-            <button onclick="resetAllData()" class="text-xs text-red-300 hover:text-red-500 underline">데이터 초기화</button>
+            <button onclick="resetAllData()" class="text-xs text-red-300 hover:text-red-500 underline">?�이??초기??/button>
         </div>
     </footer>
 
@@ -241,7 +241,7 @@
             }
 
             if (key || url) {
-                alert("설정이 저장되었습니다.");
+                alert("?�정???�?�되?�습?�다.");
                 closeApiSettings();
 
                 // Update UI status
@@ -253,7 +253,7 @@
                     syncFromSheets();
                 }
             } else {
-                alert("최소한 하나의 설정을 입력해주세요.");
+                alert("최소???�나???�정???�력?�주?�요.");
             }
         }
 
@@ -263,13 +263,13 @@
 
             if (!url) {
                 resultDiv.className = 'text-xs mt-2 text-red-600';
-                resultDiv.innerText = '❌ URL을 입력해주세요.';
+                resultDiv.innerText = '??URL???�력?�주?�요.';
                 resultDiv.classList.remove('hidden');
                 return;
             }
 
             resultDiv.className = 'text-xs mt-2 text-blue-600';
-            resultDiv.innerText = '⏳ 연결 테스트 중...';
+            resultDiv.innerText = '???�결 ?�스??�?..';
             resultDiv.classList.remove('hidden');
 
             try {
@@ -281,14 +281,14 @@
 
                 if (data.error) {
                     resultDiv.className = 'text-xs mt-2 text-red-600';
-                    resultDiv.innerText = `❌ 오류: ${data.error}`;
+                    resultDiv.innerText = `???�류: ${data.error}`;
                 } else {
                     resultDiv.className = 'text-xs mt-2 text-green-600';
-                    resultDiv.innerText = '✅ 연결 성공! 저장 버튼을 눌러주세요.';
+                    resultDiv.innerText = '???�결 ?�공! ?�??버튼???�러주세??';
                 }
             } catch (error) {
                 resultDiv.className = 'text-xs mt-2 text-red-600';
-                resultDiv.innerText = `❌ 연결 실패: ${error.message}`;
+                resultDiv.innerText = `???�결 ?�패: ${error.message}`;
             }
         }
 
@@ -297,136 +297,136 @@
             roles: [
                 {
                     id: 'vice_director',
-                    title: '총괄 부원장',
+                    title: '총괄 부?�장',
                     subtitle: 'COO (Chief Operating Officer)',
-                    icon: '👑',
-                    summary: '그룹 전체 전략 수립, 대외 협력, 인사권 행사. 실무에서 벗어나 설계와 감독에 집중.',
-                    kpi: ['매출 목표 달성률', '영업이익률', '직원 만족도(퇴사율)', '신규 제휴 건수'],
+                    icon: '?��',
+                    summary: '그룹 ?�체 ?�략 ?�립, ?�???�력, ?�사�??�사. ?�무?�서 벗어???�계?� 감독??집중.',
+                    kpi: ['매출 목표 ?�성�?, '?�업?�익�?, '직원 만족???�사??', '?�규 ?�휴 건수'],
                     main_duties: [
-                        { cat: '경영기획', desc: '경쟁사 분석, 마케팅 컨셉, 학사일정 최종 승인' },
-                        { cat: '대외협력', desc: '대학교/외부업체 MOU, 강사 영입 및 계약' },
-                        { cat: '인사/상담', desc: '채용, 연봉협상, VIP 악성 민원 해결' }
+                        { cat: '경영기획', desc: '경쟁??분석, 마�???컨셉, ?�사?�정 최종 ?�인' },
+                        { cat: '?�?�협??, desc: '?�?�교/?��??�체 MOU, 강사 ?�입 �?계약' },
+                        { cat: '?�사/?�담', desc: '채용, ?�봉?�상, VIP ?�성 민원 ?�결' }
                     ],
                     sub_duties: [
-                        { role: '실장', desc: '실장 부재 시 현장 지휘 및 비상 상황 결정' }
+                        { role: '?�장', desc: '?�장 부?????�장 지??�?비상 ?�황 결정' }
                     ],
-                    algorithm: '제1원리 사고 (First Principles): 관행을 타파하고 본질(합격)에 집중한 사업 재설계.'
+                    algorithm: '???�리 ?�고 (First Principles): 관?�을 ?�?�하�?본질(?�격)??집중???�업 ?�설�?'
                 },
                 {
                     id: 'head_manager',
-                    title: '운영 실장',
+                    title: '?�영 ?�장',
                     subtitle: 'Head of Operation',
-                    icon: '🫡',
-                    summary: '현장 운영의 전결권자. 상담 총괄, 매출 실행, 직원 관리를 책임지는 안방 살림꾼.',
-                    kpi: ['월 총 매출', '신규 등록률', '민원 해결 건수', '직원 근태 준수율'],
+                    icon: '?��',
+                    summary: '?�장 ?�영???�결권자. ?�담 총괄, 매출 ?�행, 직원 관리�? 책임지???�방 ?�림�?',
+                    kpi: ['??�?매출', '?�규 ?�록�?, '민원 ?�결 건수', '직원 근태 준?�율'],
                     main_duties: [
-                        { cat: '운영/관리', desc: '근무표 작성, 근태 관리, 비품 구매 승인' },
-                        { cat: '상담/매출', desc: '신규 OT, 반편성, 미납/환불 관리, 원서접수 지도' },
-                        { cat: '학사운영', desc: '모의고사 총괄(기획/채점), 월 특강 결산' }
+                        { cat: '?�영/관�?, desc: '근무???�성, 근태 관�? 비품 구매 ?�인' },
+                        { cat: '?�담/매출', desc: '?�규 OT, 반편?? 미납/?�불 관�? ?�서?�수 지?? },
+                        { cat: '?�사?�영', desc: '모의고사 총괄(기획/채점), ???�강 결산' }
                     ],
                     sub_duties: [
-                        { role: '부원장', desc: '부원장 부재 시 전략적 가이드라인 내 현상 유지' },
-                        { role: '대리(남/여)', desc: '시설 업체 컨택 및 중요 회계 결재 대행' }
+                        { role: '부?�장', desc: '부?�장 부?????�략??가?�드?�인 ???�상 ?��?' },
+                        { role: '?��?????', desc: '?�설 ?�체 컨택 �?중요 ?�계 결재 ?�?? }
                     ],
-                    algorithm: '포그 행동 모델 (B=MAP): 상담 시 동기(M)와 능력(A)을 자극하고 트리거(P)를 당겨 등록 유도.'
+                    algorithm: '?�그 ?�동 모델 (B=MAP): ?�담 ???�기(M)?� ?�력(A)???�극?�고 ?�리�?P)�??�겨 ?�록 ?�도.'
                 },
                 {
                     id: 'manager_facility',
-                    title: '시설/규율 대리(남)',
+                    title: '?�설/규율 ?��???',
                     subtitle: 'Facility & Field Manager',
-                    icon: '🛠️',
-                    summary: '학원의 하드웨어와 규율 책임자. 시설 유지보수, 물류, 학생 통제를 담당.',
-                    kpi: ['시설 고장 처리 시간', '안전사고 0건', '교재 배송 오차율 0%'],
+                    icon: '?���?,
+                    summary: '?�원???�드?�어?� 규율 책임?? ?�설 ?��?보수, 물류, ?�생 ?�제�??�당.',
+                    kpi: ['?�설 고장 처리 ?�간', '?�전?�고 0�?, '교재 배송 ?�차??0%'],
                     main_duties: [
-                        { cat: '시설/안전', desc: '강의실/독서실 점검, 네트워크/소방 점검' },
-                        { cat: '물류', desc: '교재 입출고, 택배 발송, 재고 실사' },
-                        { cat: '학사/규율', desc: '특강 담임, 면학 분위기 순찰, 벌점 부여' }
+                        { cat: '?�설/?�전', desc: '강의???�서???��?, ?�트?�크/?�방 ?��?' },
+                        { cat: '물류', desc: '교재 ?�출�? ?�배 발송, ?�고 ?�사' },
+                        { cat: '?�사/규율', desc: '?�강 ?�임, 면학 분위�??�찰, 벌점 부?? }
                     ],
                     sub_duties: [
-                        { role: '실장', desc: '실장 부재 시 현장 통제 지원' },
-                        { role: '대리(여)', desc: '분실물 관리 등 물리적 행정 지원' }
+                        { role: '?�장', desc: '?�장 부?????�장 ?�제 지?? },
+                        { role: '?��???', desc: '분실�?관�???물리???�정 지?? }
                     ],
-                    algorithm: '다차원적 분석 (MDA): 시간/공간/인과 차원에서 시설 리스크를 예측하고 선제 대응.'
+                    algorithm: '?�차?�적 분석 (MDA): ?�간/공간/?�과 차원?�서 ?�설 리스?��? ?�측?�고 ?�제 ?�??'
                 },
                 {
                     id: 'manager_admin',
-                    title: '회계/학사 대리(여)',
+                    title: '?�계/?�사 ?��???',
                     subtitle: 'Admin & Accounting Manager',
-                    icon: '📊',
-                    summary: '꼼꼼한 자금 및 데이터 관리자. 회계 결산, 합격자 DB, 수업 지원 담당.',
-                    kpi: ['정산 오류 0건', '합격자 DB 최신화율', '강사 만족도'],
+                    icon: '?��',
+                    summary: '꼼꼼???�금 �??�이??관리자. ?�계 결산, ?�격??DB, ?�업 지???�당.',
+                    kpi: ['?�산 ?�류 0�?, '?�격??DB 최신?�율', '강사 만족??],
                     main_duties: [
-                        { cat: '회계/총무', desc: '세금계산서, 시재 관리, 급여 정산, 비품 주문' },
-                        { cat: '학사지원', desc: '수업 시간표 배정, 강사 의전, 합격자 관리' },
-                        { cat: '특강지원', desc: '특강 접수 준비, 자료 편집 지원' }
+                        { cat: '?�계/총무', desc: '?�금계산?? ?�재 관�? 급여 ?�산, 비품 주문' },
+                        { cat: '?�사지??, desc: '?�업 ?�간??배정, 강사 ?�전, ?�격??관�? },
+                        { cat: '?�강지??, desc: '?�강 ?�수 준�? ?�료 ?�집 지?? }
                     ],
                     sub_duties: [
-                        { role: '실장', desc: '고객 데이터 관리 및 단순 매출 보고 대행' },
-                        { role: '주임(여)', desc: '독서실/사물함 접수 및 문자 발송 대행' }
+                        { role: '?�장', desc: '고객 ?�이??관�?�??�순 매출 보고 ?�?? },
+                        { role: '주임(??', desc: '?�서???�물???�수 �?문자 발송 ?�?? }
                     ],
-                    algorithm: '통합적 지혜 (IW): 엄격한 윤리 기준(Ethics)으로 자금 관리 및 데이터 무결성 유지.'
+                    algorithm: '?�합??지??(IW): ?�격???�리 기�?(Ethics)?�로 ?�금 관�?�??�이??무결???��?.'
                 },
                 {
                     id: 'chief_marketing',
-                    title: '마케팅/행정 주임(여)',
+                    title: '마�????�정 주임(??',
                     subtitle: 'Marketing & Admin Lead',
-                    icon: '📢',
-                    summary: '마케팅 관리자이자 행정 멀티플레이어. 외주 관리와 손 많이 가는 접수 업무 전담.',
-                    kpi: ['온라인 유입 수', '독서실/사물함 접수 정확도', '문자 발송 적시성', '블로그/카페 상위노출 건수'],
+                    icon: '?��',
+                    summary: '마�???관리자?�자 ?�정 멀?�플?�이?? ?�주 관리�? ??많이 가???�수 ?�무 ?�담.',
+                    kpi: ['?�라???�입 ??, '?�서???�물???�수 ?�확??, '문자 발송 ?�시??, '블로�?카페 ?�위?�출 건수'],
                     main_duties: [
-                        { cat: '바이럴관리', desc: '경시모/경꿈사 등 주요 커뮤니티 여론 모니터링 및 대응' },
-                        { cat: '콘텐츠소스', desc: '합격생 인터뷰 따기, 강의/자습 현장 숏폼(15초) 소스 촬영' },
-                        { cat: '외주핸들링', desc: '블로그 체험단 모집 관리, 대행사 키워드 노출 현황 체크' },
-                        { cat: '행정전담', desc: '독서실/사물함 신규·연장 접수, 전체 공지 문자 발송' }
+                        { cat: '바이?��?�?, desc: '경시�?경꿈????주요 커�??�티 ?�론 모니?�링 �??�?? },
+                        { cat: '콘텐츠소??, desc: '?�격???�터�??�기, 강의/?�습 ?�장 ?�폼(15�? ?�스 촬영' },
+                        { cat: '?�주?�들�?, desc: '블로�?체험??모집 관�? ?�?�사 ?�워???�출 ?�황 체크' },
+                        { cat: '?�정?�담', desc: '?�서???�물???�규·?�장 ?�수, ?�체 공�? 문자 발송' }
                     ],
                     sub_duties: [
-                        { role: '대리(여)', desc: '단순 수업 지원 및 문서 편집 대행' },
-                        { role: '영상/디자이너', desc: '단순 이미지/영상 업로드 대행' }
+                        { role: '?��???', desc: '?�순 ?�업 지??�?문서 ?�집 ?�?? },
+                        { role: '?�상/?�자?�너', desc: '?�순 ?��?지/?�상 ?�로???�?? }
                     ],
-                    algorithm: '스캠퍼 (SCAMPER): 기존 소스를 변형(Modify), 용도변경(Put to other use)하여 콘텐츠 재생산.'
+                    algorithm: '?�캠??(SCAMPER): 기존 ?�스�?변??Modify), ?�도변�?Put to other use)?�여 콘텐�??�생??'
                 }
             ],
             principles: [
-                { title: '지휘 체계 일원화', desc: '모든 보고는 [직원 → 실장 → 부원장]. 직보 금지 (긴급 제외).' },
-                { title: '역할의 이원화', desc: '부원장(설계/전략) vs 실장(집행/운영).' },
-                { title: '결과 책임제 (KPI)', desc: '열심히 했다(X) → 수치로 달성했다(O).' },
-                { title: '마케팅 공장화', desc: '창작 금지. 기획(부원장)-관리(주임)-제작(외주) 시스템.' }
+                { title: '지??체계 ?�원??, desc: '모든 보고??[직원 ???�장 ??부?�장]. 직보 금�? (긴급 ?�외).' },
+                { title: '??��???�원??, desc: '부?�장(?�계/?�략) vs ?�장(집행/?�영).' },
+                { title: '결과 책임??(KPI)', desc: '?�심???�다(X) ???�치�??�성?�다(O).' },
+                { title: '마�???공장??, desc: '창작 금�?. 기획(부?�장)-관�?주임)-?�작(?�주) ?�스??' }
             ],
             taskRegistry: [
-                { id: 1, category: '경영기획', task: '경쟁사 분석 및 전략 수립', main: 'vice_director', sub: 'head_manager' },
-                { id: 2, category: '경영기획', task: '학사일정 및 마케팅 컨셉 승인', main: 'vice_director', sub: 'head_manager' },
-                { id: 3, category: '대외협력', task: '대학교/외부업체 MOU', main: 'vice_director', sub: 'head_manager' },
-                { id: 4, category: '인사/상담', task: '직원 채용 및 연봉 협상', main: 'vice_director', sub: 'head_manager' },
-                { id: 5, category: '인사/상담', task: 'VIP 및 악성 민원 해결', main: 'vice_director', sub: 'head_manager' },
+                { id: 1, category: '경영기획', task: '경쟁??분석 �??�략 ?�립', main: 'vice_director', sub: 'head_manager' },
+                { id: 2, category: '경영기획', task: '?�사?�정 �?마�???컨셉 ?�인', main: 'vice_director', sub: 'head_manager' },
+                { id: 3, category: '?�?�협??, task: '?�?�교/?��??�체 MOU', main: 'vice_director', sub: 'head_manager' },
+                { id: 4, category: '?�사/?�담', task: '직원 채용 �??�봉 ?�상', main: 'vice_director', sub: 'head_manager' },
+                { id: 5, category: '?�사/?�담', task: 'VIP �??�성 민원 ?�결', main: 'vice_director', sub: 'head_manager' },
 
-                { id: 6, category: '운영/관리', task: '근무표 작성 및 근태 관리', main: 'head_manager', sub: 'vice_director' },
-                { id: 7, category: '운영/관리', task: '비품 구매 승인 (50만원 미만)', main: 'head_manager', sub: 'vice_director' },
-                { id: 8, category: '상담/매출', task: '신규생 OT 및 반편성', main: 'head_manager', sub: 'manager_admin' },
-                { id: 9, category: '상담/매출', task: '미납자 및 환불 관리', main: 'head_manager', sub: 'manager_admin' },
-                { id: 10, category: '학사운영', task: '모의고사 총괄 (기획/채점)', main: 'head_manager', sub: 'manager_admin' },
+                { id: 6, category: '?�영/관�?, task: '근무???�성 �?근태 관�?, main: 'head_manager', sub: 'vice_director' },
+                { id: 7, category: '?�영/관�?, task: '비품 구매 ?�인 (50만원 미만)', main: 'head_manager', sub: 'vice_director' },
+                { id: 8, category: '?�담/매출', task: '?�규??OT �?반편??, main: 'head_manager', sub: 'manager_admin' },
+                { id: 9, category: '?�담/매출', task: '미납??�??�불 관�?, main: 'head_manager', sub: 'manager_admin' },
+                { id: 10, category: '?�사?�영', task: '모의고사 총괄 (기획/채점)', main: 'head_manager', sub: 'manager_admin' },
 
-                { id: 11, category: '시설/안전', task: '강의실/독서실 시설 점검', main: 'manager_facility', sub: 'head_manager' },
-                { id: 12, category: '시설/안전', task: '네트워크(Wi-Fi)/소방 점검', main: 'manager_facility', sub: 'head_manager' },
-                { id: 13, category: '물류', task: '교재 입출고 및 택배 발송', main: 'manager_facility', sub: 'manager_admin' },
-                { id: 14, category: '학사/규율', task: '특강 담임 (현장 통제)', main: 'manager_facility', sub: 'head_manager' },
+                { id: 11, category: '?�설/?�전', task: '강의???�서???�설 ?��?', main: 'manager_facility', sub: 'head_manager' },
+                { id: 12, category: '?�설/?�전', task: '?�트?�크(Wi-Fi)/?�방 ?��?', main: 'manager_facility', sub: 'head_manager' },
+                { id: 13, category: '물류', task: '교재 ?�출�?�??�배 발송', main: 'manager_facility', sub: 'manager_admin' },
+                { id: 14, category: '?�사/규율', task: '?�강 ?�임 (?�장 ?�제)', main: 'manager_facility', sub: 'head_manager' },
 
-                { id: 15, category: '회계/총무', task: '세금계산서 및 시재 관리', main: 'manager_admin', sub: 'head_manager' },
-                { id: 16, category: '회계/총무', task: '강사료 및 알바 급여 정산', main: 'manager_admin', sub: 'head_manager' },
-                { id: 17, category: '학사지원', task: '합격자 데이터(에듀그램) 관리', main: 'manager_admin', sub: 'head_manager' },
-                { id: 18, category: '학사지원', task: '수업 시간표 배정 및 강사 의전', main: 'manager_admin', sub: 'chief_marketing' },
+                { id: 15, category: '?�계/총무', task: '?�금계산??�??�재 관�?, main: 'manager_admin', sub: 'head_manager' },
+                { id: 16, category: '?�계/총무', task: '강사�?�??�바 급여 ?�산', main: 'manager_admin', sub: 'head_manager' },
+                { id: 17, category: '?�사지??, task: '?�격???�이???��?그램) 관�?, main: 'manager_admin', sub: 'head_manager' },
+                { id: 18, category: '?�사지??, task: '?�업 ?�간??배정 �?강사 ?�전', main: 'manager_admin', sub: 'chief_marketing' },
 
-                { id: 19, category: '마케팅/바이럴', task: '경시모/경꿈사 일일 모니터링 및 댓글 작업', main: 'chief_marketing', sub: 'vice_director' },
-                { id: 20, category: '마케팅/바이럴', task: '네이버 지식iN 우리 학원 관련 답변 달기', main: 'chief_marketing', sub: 'vice_director' },
-                { id: 21, category: '마케팅/콘텐츠', task: '합격생/성적우수자 인터뷰 및 수기 확보', main: 'chief_marketing', sub: 'head_manager' },
-                { id: 22, category: '마케팅/콘텐츠', task: '인스타/유튜브용 숏폼(강의/현장) 촬영', main: 'chief_marketing', sub: 'head_manager' },
-                { id: 23, category: '마케팅/콘텐츠', task: '카드뉴스용 강의 핵심 요약 자료 수집', main: 'chief_marketing', sub: 'manager_admin' },
-                { id: 24, category: '마케팅/성과', task: '블로그 키워드 순위 체크 및 보고', main: 'chief_marketing', sub: 'vice_director' },
-                { id: 25, category: '마케팅/오프라인', task: '인근 독서실/스터디카페 전단지 비치 확인', main: 'chief_marketing', sub: 'manager_facility' },
-                { id: 26, category: '마케팅/DB', task: '설명회/상담 미등록자 DB 문자(SMS) 마케팅', main: 'chief_marketing', sub: 'head_manager' },
-                { id: 27, category: '마케팅관리', task: '외주 업체 소스 전달 및 검수', main: 'chief_marketing', sub: 'vice_director' },
-                { id: 28, category: '행정전담', task: '독서실/사물함 신규·연장 접수', main: 'chief_marketing', sub: 'manager_admin' },
-                { id: 29, category: '행정전담', task: '전체 공지 문자 발송', main: 'chief_marketing', sub: 'head_manager' },
-                { id: 30, category: '현장지원', task: '수강증 제작 및 설명회 준비', main: 'chief_marketing', sub: 'manager_facility' }
+                { id: 19, category: '마�???바이??, task: '경시�?경꿈???�일 모니?�링 �??��? ?�업', main: 'chief_marketing', sub: 'vice_director' },
+                { id: 20, category: '마�???바이??, task: '?�이�?지?�iN ?�리 ?�원 관???��? ?�기', main: 'chief_marketing', sub: 'vice_director' },
+                { id: 21, category: '마�???콘텐�?, task: '?�격???�적?�수???�터�?�??�기 ?�보', main: 'chief_marketing', sub: 'head_manager' },
+                { id: 22, category: '마�???콘텐�?, task: '?�스?�/?�튜브용 ?�폼(강의/?�장) 촬영', main: 'chief_marketing', sub: 'head_manager' },
+                { id: 23, category: '마�???콘텐�?, task: '카드?�스??강의 ?�심 ?�약 ?�료 ?�집', main: 'chief_marketing', sub: 'manager_admin' },
+                { id: 24, category: '마�????�과', task: '블로�??�워???�위 체크 �?보고', main: 'chief_marketing', sub: 'vice_director' },
+                { id: 25, category: '마�????�프?�인', task: '?�근 ?�서???�터?�카???�단지 비치 ?�인', main: 'chief_marketing', sub: 'manager_facility' },
+                { id: 26, category: '마�???DB', task: '?�명???�담 미등록자 DB 문자(SMS) 마�???, main: 'chief_marketing', sub: 'head_manager' },
+                { id: 27, category: '마�??��?�?, task: '?�주 ?�체 ?�스 ?�달 �?검??, main: 'chief_marketing', sub: 'vice_director' },
+                { id: 28, category: '?�정?�담', task: '?�서???�물???�규·?�장 ?�수', main: 'chief_marketing', sub: 'manager_admin' },
+                { id: 29, category: '?�정?�담', task: '?�체 공�? 문자 발송', main: 'chief_marketing', sub: 'head_manager' },
+                { id: 30, category: '?�장지??, task: '?�강�??�작 �??�명??준�?, main: 'chief_marketing', sub: 'manager_facility' }
             ]
         };
 
@@ -475,14 +475,14 @@
         }
 
         function resetAllData() {
-            if (confirm("모든 변경사항(이름 변경, 업무 추가 등)을 초기화하시겠습니까?")) {
+            if (confirm("모든 변경사???�름 변�? ?�무 추�? ????초기?�하?�겠?�니�?")) {
                 localStorage.removeItem('kpa_ops_manual_v3');
                 location.reload();
             }
         }
 
         // ============================================
-        // Google Sheets 연동 함수
+        // Google Sheets ?�동 ?�수
         // ============================================
 
         async function syncFromSheets() {
@@ -614,20 +614,20 @@
             if (!syncIndicator) return;
 
             if (status === 'syncing') {
-                syncIndicator.innerHTML = '🔄 동기화 중...';
+                syncIndicator.innerHTML = '?�� ?�기??�?..';
                 syncIndicator.className = 'text-xs text-blue-600 font-bold animate-pulse';
             } else if (status === 'success') {
-                syncIndicator.innerHTML = '✅ 동기화 완료';
+                syncIndicator.innerHTML = '???�기???�료';
                 syncIndicator.className = 'text-xs text-green-600 font-bold';
                 setTimeout(() => {
                     if (syncStatus.lastSync) {
                         const time = syncStatus.lastSync.toLocaleTimeString('ko-KR');
-                        syncIndicator.innerHTML = `☁️ ${time}`;
+                        syncIndicator.innerHTML = `?�️ ${time}`;
                         syncIndicator.className = 'text-xs text-gray-500';
                     }
                 }, 2000);
             } else if (status === 'error') {
-                syncIndicator.innerHTML = '⚠️ 오프라인';
+                syncIndicator.innerHTML = '?�️ ?�프?�인';
                 syncIndicator.className = 'text-xs text-orange-500 font-bold';
             }
         }
@@ -637,40 +637,40 @@
             // Check for Key
             if (!userApiKey) {
                 openApiSettings();
-                return "AI 기능을 사용하려면 설정(⚙️) 메뉴에서 API 키를 먼저 입력해주세요.";
+                return "AI 기능???�용?�려�??�정(?�️) 메뉴?�서 API ?��? 먼�? ?�력?�주?�요.";
             }
 
             const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.0-flash-preview:generateContent?key=${userApiKey}`;
 
             const manualContext = `
-                당신은 한국경찰학원의 'AI 운영 컨설턴트'입니다.
-                아래의 [조직 운영 매뉴얼]을 엄격히 준수하여 답변해야 합니다.
+                ?�신?� ?�국경찰?�원??'AI ?�영 컨설?�트'?�니??
+                ?�래??[조직 ?�영 매뉴?????�격??준?�하???��??�야 ?�니??
                 
-                [4대 운영 원칙]
-                1. 지휘 체계 일원화: 직원 -> 실장 -> 부원장. 직보 금지(긴급 제외).
-                2. 역할 이원화: 부원장(전략/설계) vs 실장(현장/운영).
-                3. 결과 책임제: KPI 중심 평가.
-                4. 마케팅 공장화: 기획(부원장)-관리(주임)-제작(외주).
+                [4?� ?�영 ?�칙]
+                1. 지??체계 ?�원?? 직원 -> ?�장 -> 부?�장. 직보 금�?(긴급 ?�외).
+                2. ??�� ?�원?? 부?�장(?�략/?�계) vs ?�장(?�장/?�영).
+                3. 결과 책임?? KPI 중심 ?��?.
+                4. 마�???공장?? 기획(부?�장)-관�?주임)-?�작(?�주).
 
-                [직무별 핵심 R&R]
-                - 부원장: COO, 전략, 인사, 대외협력. 실무 금지.
-                - 실장: 현장 총괄, 상담/매출/직원관리 전결권.
-                - 대리(남): 시설, 규율, 물류.
-                - 대리(여): 회계, 데이터, 학사지원.
-                - 주임(여): 마케팅 관리(창작X), 행정/접수 전담.
+                [직무�??�심 R&R]
+                - 부?�장: COO, ?�략, ?�사, ?�?�협?? ?�무 금�?.
+                - ?�장: ?�장 총괄, ?�담/매출/직원관�??�결�?
+                - ?��???: ?�설, 규율, 물류.
+                - ?��???: ?�계, ?�이?? ?�사지??
+                - 주임(??: 마�???관�?창작X), ?�정/?�수 ?�담.
 
-                [보고의 원칙]
-                - 1-3-1 법칙: 결론 1줄, 근거 3가지, 제안 1줄.
-                - 나쁜 보고: 변명, 과정 나열.
-                - 좋은 보고: 숫자, 대안 제시.
+                [보고???�칙]
+                - 1-3-1 법칙: 결론 1�? 근거 3가지, ?�안 1�?
+                - ?�쁜 보고: 변�? 과정 ?�열.
+                - 좋�? 보고: ?�자, ?�???�시.
 
-                답변 스타일:
-                - 전문적이고 단호한 '총괄 부원장' 또는 '경영 컨설턴트'의 어조를 사용하세요.
-                - 반드시 매뉴얼의 조항이나 원칙을 인용하여 근거를 제시하세요.
-                - 실행 가능한 구체적인 행동 지침(Action Plan)을 1, 2, 3 번호를 매겨 제안하세요.
+                ?��? ?��???
+                - ?�문?�이�??�호??'총괄 부?�장' ?�는 '경영 컨설?�트'???�조�??�용?�세??
+                - 반드??매뉴?�의 조항?�나 ?�칙???�용?�여 근거�??�시?�세??
+                - ?�행 가?�한 구체?�인 ?�동 지�?Action Plan)??1, 2, 3 번호�?매겨 ?�안?�세??
             `;
 
-            const fullPrompt = `${manualContext}\n\n${systemContext}\n\n사용자 질문: ${userQuery}`;
+            const fullPrompt = `${manualContext}\n\n${systemContext}\n\n?�용??질문: ${userQuery}`;
 
             try {
                 const response = await fetch(url, {
@@ -681,13 +681,13 @@
                     })
                 });
 
-                if (!response.ok) throw new Error('API 호출 실패');
+                if (!response.ok) throw new Error('API ?�출 ?�패');
 
                 const data = await response.json();
                 return data.candidates[0].content.parts[0].text;
             } catch (error) {
                 console.error("Gemini API Error:", error);
-                return "오류가 발생했습니다. API 키가 정확한지 확인해주세요.";
+                return "?�류가 발생?�습?�다. API ?��? ?�확?��? ?�인?�주?�요.";
             }
         }
 
@@ -709,10 +709,10 @@
                 if (syncIndicator) {
                     syncIndicator.classList.remove('hidden');
                     if (syncStatus.connected) {
-                        syncIndicator.innerHTML = '☁️ 동기화됨';
+                        syncIndicator.innerHTML = '?�️ ?�기?�됨';
                         syncIndicator.className = 'text-xs text-green-600';
                     } else {
-                        syncIndicator.innerHTML = '⚠️ 오프라인';
+                        syncIndicator.innerHTML = '?�️ ?�프?�인';
                         syncIndicator.className = 'text-xs text-orange-500';
                     }
                 }
@@ -723,14 +723,14 @@
 
         function renderNav() {
             const navItems = [
-                { id: 'dashboard', label: '대시보드' },
-                { id: 'roles', label: '업무 분장' },
-                { id: 'task-search', label: '🔍 업무 검색 & 배정' }, // New Search Menu
+                { id: 'dashboard', label: '?�?�보?? },
+                { id: 'roles', label: '?�무 분장' },
+                { id: 'task-search', label: '?�� ?�무 검??& 배정' }, // New Search Menu
                 { id: 'reporting', label: '보고 체계' },
-                { id: 'shifts', label: '근무/시즌' },
-                { id: 'utility', label: '🛠️ 실무 유틸리티' },
-                { id: 'toolkit', label: '✨ AI 스마트 툴' },
-                { id: 'ai-copilot', label: '🤖 AI 운영 코파일럿' }
+                { id: 'shifts', label: '근무/?�즌' },
+                { id: 'utility', label: '?���??�무 ?�틸리티' },
+                { id: 'toolkit', label: '??AI ?�마???? },
+                { id: 'ai-copilot', label: '?�� AI ?�영 코파?�럿' }
             ];
 
             const container = document.getElementById('nav-container');
@@ -768,12 +768,12 @@
         // --- Helper: Get Role Name by ID ---
         function getRoleName(id) {
             const role = appData.roles.find(r => r.id === id);
-            return role ? role.title : '미지정';
+            return role ? role.title : '미�???;
         }
         function getRoleBadge(id) {
             const role = appData.roles.find(r => r.id === id);
             // Added onclick for filtering
-            return role ? `<span onclick="filterTasksByRole('${id}')" class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-800 hover:bg-indigo-100 cursor-pointer border border-transparent hover:border-indigo-300 transition-colors" title="클릭하여 ${role.title} 업무만 보기">${role.icon} ${role.title}</span>` : '<span class="text-stone-400">-</span>';
+            return role ? `<span onclick="filterTasksByRole('${id}')" class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-800 hover:bg-indigo-100 cursor-pointer border border-transparent hover:border-indigo-300 transition-colors" title="?�릭?�여 ${role.title} ?�무�?보기">${role.icon} ${role.title}</span>` : '<span class="text-stone-400">-</span>';
         }
 
         // --- Task Search & Add View ---
@@ -782,25 +782,25 @@
                     <div class="bg-white p-8 rounded-lg shadow-sm border border-stone-200 min-h-[600px]" >
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
                         <div>
-                            <h2 class="text-2xl font-bold text-slate-800">🔍 업무 검색 및 관리</h2>
-                            <p class="text-stone-500 text-sm mt-1">담당자를 클릭하면 해당 인원의 업무(정/부)만 모아볼 수 있습니다.</p>
+                            <h2 class="text-2xl font-bold text-slate-800">?�� ?�무 검??�?관�?/h2>
+                            <p class="text-stone-500 text-sm mt-1">?�당?��? ?�릭?�면 ?�당 ?�원???�무(??부)�?모아�????�습?�다.</p>
                         </div>
                         <div class="flex gap-2 w-full md:w-auto flex-wrap justify-end">
                             <!-- Filter Display -->
                             <div id="active-filter-display" class="hidden flex items-center bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm border border-indigo-200">
                                 <span id="filter-name" class="font-bold mr-2"></span>
-                                <button onclick="clearRoleFilter()" class="hover:text-indigo-900 font-bold">✕</button>
+                                <button onclick="clearRoleFilter()" class="hover:text-indigo-900 font-bold">??/button>
                             </div>
 
-                            <input type="text" id="task-search-input" placeholder="업무명 검색 (예: 환불)" 
+                            <input type="text" id="task-search-input" placeholder="?�무�?검??(?? ?�불)" 
                                 class="flex-grow md:w-48 p-2 border border-stone-300 rounded text-sm focus:ring-2 focus:ring-blue-500 outline-none"
                                 onkeyup="filterTasks()">
                             
                             <button onclick="openRoleEditor()" class="bg-stone-600 text-white px-3 py-2 rounded text-sm font-bold hover:bg-stone-700 transition flex items-center whitespace-nowrap">
-                                🏷️ 이름 변경
+                                ?���??�름 변�?
                             </button>
                             <button onclick="openTaskForm()" class="bg-indigo-600 text-white px-4 py-2 rounded text-sm font-bold hover:bg-indigo-700 transition flex items-center whitespace-nowrap">
-                                ➕ 신규 업무
+                                ???�규 ?�무
                             </button>
                         </div>
                     </div>
@@ -808,8 +808,8 @@
                     <!--Role Name Editor Form(Hidden)-- >
                     <div id="edit-role-form" class="hidden mb-8 bg-stone-50 p-6 rounded-lg border border-stone-200 animate-fade-in">
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="font-bold text-stone-800 flex items-center"><span class="text-xl mr-2">🏷️</span> 담당자 명칭(실명) 수정</h3>
-                            <button onclick="closeRoleEditor()" class="text-stone-400 hover:text-stone-600">✕</button>
+                            <h3 class="font-bold text-stone-800 flex items-center"><span class="text-xl mr-2">?���?/span> ?�당??명칭(?�명) ?�정</h3>
+                            <button onclick="closeRoleEditor()" class="text-stone-400 hover:text-stone-600">??/button>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                             ${appData.roles.map(r => `
@@ -823,7 +823,7 @@
                             `).join('')}
                         </div>
                         <div class="flex justify-end">
-                            <button onclick="saveRoleNames()" class="bg-stone-800 text-white px-6 py-2 rounded text-sm font-bold hover:bg-black shadow-sm">변경사항 저장</button>
+                            <button onclick="saveRoleNames()" class="bg-stone-800 text-white px-6 py-2 rounded text-sm font-bold hover:bg-black shadow-sm">변경사???�??/button>
                         </div>
                     </div>
 
@@ -831,36 +831,36 @@
                     <div id="add-task-form" class="hidden mb-8 bg-indigo-50 p-6 rounded-lg border border-indigo-100 animate-fade-in">
                         <input type="hidden" id="edit-task-id"> <!-- ID for Edit Mode -->
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="font-bold text-indigo-800 flex items-center" id="form-title"><span class="text-xl mr-2">✍️</span> 신규 업무 배정</h3>
-                            <span id="form-mode-badge" class="text-xs bg-indigo-200 text-indigo-800 px-2 py-1 rounded hidden">수정 모드</span>
+                            <h3 class="font-bold text-indigo-800 flex items-center" id="form-title"><span class="text-xl mr-2">?�️</span> ?�규 ?�무 배정</h3>
+                            <span id="form-mode-badge" class="text-xs bg-indigo-200 text-indigo-800 px-2 py-1 rounded hidden">?�정 모드</span>
                         </div>
                         
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
                             <div>
                                 <label class="block text-xs font-bold text-indigo-600 uppercase mb-1">카테고리</label>
-                                <input type="text" id="new-cat" placeholder="예: 행사지원" class="w-full p-2 border border-indigo-200 rounded text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                                <input type="text" id="new-cat" placeholder="?? ?�사지?? class="w-full p-2 border border-indigo-200 rounded text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
                             </div>
                             <div class="lg:col-span-2"> <!-- Task Name takes more space -->
-                                <label class="block text-xs font-bold text-indigo-600 uppercase mb-1">업무 내용</label>
-                                <input type="text" id="new-task" placeholder="예: 주말 설명회 주차 관리" class="w-full p-2 border border-indigo-200 rounded text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                                <label class="block text-xs font-bold text-indigo-600 uppercase mb-1">?�무 ?�용</label>
+                                <input type="text" id="new-task" placeholder="?? 주말 ?�명??주차 관�? class="w-full p-2 border border-indigo-200 rounded text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-indigo-600 uppercase mb-1">정(Main) 담당</label>
+                                <label class="block text-xs font-bold text-indigo-600 uppercase mb-1">??Main) ?�당</label>
                                 <select id="new-main" class="w-full p-2 border border-indigo-200 rounded text-sm bg-white">
                                     ${appData.roles.map(r => `<option value="${r.id}">${r.title}</option>`).join('')}
                                 </select>
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-indigo-600 uppercase mb-1">부(Sub) 담당</label>
+                                <label class="block text-xs font-bold text-indigo-600 uppercase mb-1">부(Sub) ?�당</label>
                                 <select id="new-sub" class="w-full p-2 border border-indigo-200 rounded text-sm bg-white">
-                                    <option value="">(선택 안함)</option>
+                                    <option value="">(?�택 ?�함)</option>
                                     ${appData.roles.map(r => `<option value="${r.id}">${r.title}</option>`).join('')}
                                 </select>
                             </div>
                         </div>
                         <div class="flex justify-end gap-2">
                             <button onclick="closeTaskForm()" class="px-4 py-2 text-stone-500 hover:text-stone-700 text-sm font-bold bg-white border border-stone-300 rounded">취소</button>
-                            <button onclick="saveTask()" class="bg-indigo-600 text-white px-6 py-2 rounded text-sm font-bold hover:bg-indigo-700 shadow-sm" id="save-btn">저장 및 배정</button>
+                            <button onclick="saveTask()" class="bg-indigo-600 text-white px-6 py-2 rounded text-sm font-bold hover:bg-indigo-700 shadow-sm" id="save-btn">?�??�?배정</button>
                         </div>
                     </div>
 
@@ -870,10 +870,10 @@
                             <thead class="bg-stone-50">
                                 <tr>
                                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">카테고리</th>
-                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">업무 내용</th>
-                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">정(Main) 담당</th>
-                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">부(Sub) 담당</th>
-                                    <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-stone-500 uppercase tracking-wider">관리</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">?�무 ?�용</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">??Main) ?�당</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">부(Sub) ?�당</th>
+                                    <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-stone-500 uppercase tracking-wider">관�?/th>
                                 </tr>
                             </thead>
                             <tbody id="task-list-body" class="bg-white divide-y divide-stone-200">
@@ -882,9 +882,9 @@
                         </table>
                     </div>
                     <div id="no-result" class="hidden text-center py-10 text-stone-400">
-                        검색 결과가 없습니다.
+                        검??결과가 ?�습?�다.
                     </div>
-                </div >
+                </div>
                     `;
             // Initial render with current filter state - wait for DOM to be fully rendered
             requestAnimationFrame(() => {
@@ -926,12 +926,12 @@
                         ${getRoleBadge(t.sub)}
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                        <button onclick="editTask(${t.id})" class="text-indigo-600 hover:text-indigo-900 mr-3 p-1 rounded hover:bg-indigo-50" title="수정">
+                        <button onclick="editTask(${t.id})" class="text-indigo-600 hover:text-indigo-900 mr-3 p-1 rounded hover:bg-indigo-50" title="?�정">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 00 2 2h11a2 2 0 00 2-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                             </svg>
                         </button>
-                        <button onclick="deleteTask(${t.id})" class="text-red-600 hover:text-red-900 p-1 rounded hover:bg-red-50" title="삭제">
+                        <button onclick="deleteTask(${t.id})" class="text-red-600 hover:text-red-900 p-1 rounded hover:bg-red-50" title="??��">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                             </svg>
@@ -953,7 +953,7 @@
 
             if (filterDisplay && filterName) {
                 filterDisplay.classList.remove('hidden');
-                filterName.innerText = `${roleName} 담당 업무`;
+                filterName.innerText = `${roleName} ?�당 ?�무`;
                 if (searchInput) searchInput.value = ''; // Clear text search
             }
 
@@ -1017,7 +1017,7 @@
             });
 
             saveData(); // Save to LocalStorage
-            alert('담당자 명칭이 변경되었습니다.');
+            alert('?�당??명칭??변경되?�습?�다.');
             closeRoleEditor();
 
             // Refresh Views
@@ -1036,7 +1036,7 @@
             // Null check - if form elements don't exist
             if (!form || !title || !btn || !badge || !idField) {
                 console.error('Task form elements not found');
-                alert('양식을 찾을 수 없습니다. "업무 검색 및 관리" 메뉴로 이동해주세요.');
+                alert('?�식??찾을 ???�습?�다. "?�무 검??�?관�? 메뉴�??�동?�주?�요.');
                 return;
             }
 
@@ -1048,7 +1048,7 @@
 
             if (!catEl || !taskEl || !mainSelect || !subSelect) {
                 console.error('Task input elements not found');
-                alert('양식을 찾을 수 없습니다. "업무 검색 및 관리" 메뉴로 이동해주세요.');
+                alert('?�식??찾을 ???�습?�다. "?�무 검??�?관�? 메뉴�??�동?�주?�요.');
                 return;
             }
 
@@ -1058,15 +1058,15 @@
             // Re-populate dropdowns to ensure latest names
             const roleOptions = appData.roles.map(r => `<option value="${r.id}">${r.title}</option>`).join('');
             mainSelect.innerHTML = roleOptions;
-            subSelect.innerHTML = `<option value="">(선택 안함)</option>` + roleOptions;
+            subSelect.innerHTML = `<option value="">(?�택 ?�함)</option>` + roleOptions;
 
             mainSelect.selectedIndex = 0;
             subSelect.selectedIndex = 0;
             idField.value = '';
 
             if (mode === 'edit' && data) {
-                title.innerHTML = '<span class="text-xl mr-2">✏️</span> 업무 내용 수정';
-                btn.innerText = '수정 완료';
+                title.innerHTML = '<span class="text-xl mr-2">?�️</span> ?�무 ?�용 ?�정';
+                btn.innerText = '?�정 ?�료';
                 btn.className = "bg-green-600 text-white px-6 py-2 rounded text-sm font-bold hover:bg-green-700 shadow-sm";
                 badge.classList.remove('hidden');
 
@@ -1076,8 +1076,8 @@
                 subSelect.value = data.sub;
                 idField.value = data.id;
             } else {
-                title.innerHTML = '<span class="text-xl mr-2">✍️</span> 신규 업무 배정';
-                btn.innerText = '저장 및 배정';
+                title.innerHTML = '<span class="text-xl mr-2">?�️</span> ?�규 ?�무 배정';
+                btn.innerText = '?�??�?배정';
                 btn.className = "bg-indigo-600 text-white px-6 py-2 rounded text-sm font-bold hover:bg-indigo-700 shadow-sm";
                 badge.classList.add('hidden');
             }
@@ -1100,7 +1100,7 @@
             // Null check
             if (!idEl || !catEl || !taskEl || !mainEl || !subEl) {
                 console.error('Task form elements not found');
-                alert('양식을 찾을 수 없습니다. 페이지를 새로고침해주세요.');
+                alert('?�식??찾을 ???�습?�다. ?�이지�??�로고침?�주?�요.');
                 return;
             }
 
@@ -1111,7 +1111,7 @@
             const sub = subEl.value;
 
             if (!cat || !task || !main) {
-                alert("카테고리, 업무 내용, 정(Main) 담당은 필수입니다.");
+                alert("카테고리, ?�무 ?�용, ??Main) ?�당?� ?�수?�니??");
                 return;
             }
 
@@ -1119,12 +1119,12 @@
                 const index = appData.taskRegistry.findIndex(t => t.id == id);
                 if (index !== -1) {
                     appData.taskRegistry[index] = { id: parseInt(id), category: cat, task: task, main: main, sub: sub };
-                    alert("업무가 수정되었습니다.");
+                    alert("?�무가 ?�정?�었?�니??");
                 }
             } else {
                 const newId = appData.taskRegistry.length > 0 ? Math.max(...appData.taskRegistry.map(t => t.id)) + 1 : 1;
                 appData.taskRegistry.unshift({ id: newId, category: cat, task: task, main: main, sub: sub });
-                alert("새로운 업무가 배정되었습니다.");
+                alert("?�로???�무가 배정?�었?�니??");
             }
 
             saveData(); // Save to LocalStorage
@@ -1140,7 +1140,7 @@
         }
 
         function deleteTask(id) {
-            if (confirm("정말 이 업무를 삭제하시겠습니까?\n삭제된 데이터는 복구할 수 없습니다.")) {
+            if (confirm("?�말 ???�무�???��?�시겠습?�까?\n??��???�이?�는 복구?????�습?�다.")) {
                 appData.taskRegistry = appData.taskRegistry.filter(t => t.id !== id);
                 saveData(); // Save to LocalStorage
                 filterTasks();
@@ -1153,21 +1153,21 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in" >
                     <!--Intro -->
                     <div class="md:col-span-2 bg-white p-8 rounded-lg shadow-sm border border-stone-200">
-                        <h1 class="text-3xl font-bold text-slate-800 mb-4">운영 총괄 커맨드 센터</h1>
+                        <h1 class="text-3xl font-bold text-slate-800 mb-4">?�영 총괄 커맨???�터</h1>
                         <p class="text-stone-600 text-lg leading-relaxed">
-                            본 시스템은 <strong>COO(최고운영책임자) 체제</strong> 하에 그룹 전체의 효율적인 운영을 지원합니다.
-                            <strong>'전략(부원장)'</strong>과 <strong>'실행(실장)'</strong>을 분리하고, 
-                            명확한 R&R과 데이터 기반의 의사결정을 통해 조직의 성장을 도모합니다.
+                            �??�스?��? <strong>COO(최고?�영책임?? 체제</strong> ?�에 그룹 ?�체???�율?�인 ?�영??지?�합?�다.
+                            <strong>'?�략(부?�장)'</strong>�?<strong>'?�행(?�장)'</strong>??분리?�고, 
+                            명확??R&R�??�이??기반???�사결정???�해 조직???�장???�모?�니??
                         </p>
                     </div>
 
                     <!--Core Principles-- >
                     <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
-                        <h2 class="text-xl font-bold text-slate-800 mb-4 border-b pb-2">📋 4대 운영 원칙</h2>
+                        <h2 class="text-xl font-bold text-slate-800 mb-4 border-b pb-2">?�� 4?� ?�영 ?�칙</h2>
                         <ul class="space-y-4">
                             ${appData.principles.map(p => `
                                 <li class="flex items-start">
-                                    <span class="flex-shrink-0 h-6 w-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center text-xs font-bold mr-3">✓</span>
+                                    <span class="flex-shrink-0 h-6 w-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center text-xs font-bold mr-3">??/span>
                                     <div>
                                         <p class="font-bold text-slate-700">${p.title}</p>
                                         <p class="text-stone-500 text-sm">${p.desc}</p>
@@ -1179,43 +1179,43 @@
 
                     <!--Org Chart Visualization-- >
                     <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 relative overflow-hidden">
-                        <h2 class="text-xl font-bold text-slate-800 mb-4 border-b pb-2">🏢 조직 구조도</h2>
+                        <h2 class="text-xl font-bold text-slate-800 mb-4 border-b pb-2">?�� 조직 구조??/h2>
                         <div class="flex flex-col items-center justify-center space-y-6 pt-4 relative z-10">
 
                             <!-- CEO -->
                             <div class="w-48 bg-stone-100 border border-stone-300 p-3 rounded text-center">
-                                <p class="text-xs text-stone-500 font-bold">최고 의사결정</p>
-                                <p class="font-bold text-stone-800">대표이사 / 원장</p>
+                                <p class="text-xs text-stone-500 font-bold">최고 ?�사결정</p>
+                                <p class="font-bold text-stone-800">?�?�이??/ ?�장</p>
                             </div>
 
                             <!-- Vice Director -->
                             <div class="w-56 bg-slate-800 text-white p-4 rounded-lg text-center shadow-lg transform scale-105">
-                                <p class="text-xs text-slate-300 font-bold mb-1">COO / 전략 총괄</p>
-                                <p class="text-lg font-bold">총괄 부원장 (나)</p>
+                                <p class="text-xs text-slate-300 font-bold mb-1">COO / ?�략 총괄</p>
+                                <p class="text-lg font-bold">총괄 부?�장 (??</p>
                             </div>
 
                             <!-- Head Manager -->
                             <div class="w-56 bg-white border-2 border-slate-600 p-3 rounded-lg text-center shadow-md">
-                                <p class="text-xs text-slate-500 font-bold">Operation / 현장 총괄</p>
-                                <p class="font-bold text-slate-800">운영 실장</p>
+                                <p class="text-xs text-slate-500 font-bold">Operation / ?�장 총괄</p>
+                                <p class="font-bold text-slate-800">?�영 ?�장</p>
                             </div>
 
                             <!-- Teams -->
                             <div class="grid grid-cols-2 gap-4 w-full">
                                 <div class="bg-stone-50 border border-stone-200 p-2 rounded text-center">
-                                    <p class="font-bold text-sm">운영지원팀</p>
-                                    <p class="text-xs text-stone-500">대리(남/여), 주임</p>
+                                    <p class="font-bold text-sm">?�영지?��?</p>
+                                    <p class="text-xs text-stone-500">?��?????, 주임</p>
                                 </div>
                                 <div class="bg-red-50 border border-red-200 p-2 rounded text-center">
-                                    <p class="font-bold text-sm text-red-700">TF / 기획팀</p>
-                                    <p class="text-xs text-red-500">부원장 직속 (혁신)</p>
+                                    <p class="font-bold text-sm text-red-700">TF / 기획?�</p>
+                                    <p class="text-xs text-red-500">부?�장 직속 (?�신)</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Connecting Lines would be handled by CSS or SVG but constrained to no SVG, simplified visually by layout spacing -->
                         <div class="absolute top-1/2 left-1/2 w-0.5 h-32 bg-stone-300 -z-0 transform -translate-x-1/2 -translate-y-1/2"></div>
                     </div>
-                </div >
+                </div>
                     `;
         }
 
@@ -1223,12 +1223,12 @@
         function renderRoles(container) {
             container.innerHTML = `
                     <div class="mb-6 bg-white p-6 rounded-lg border border-stone-200" >
-                    <h2 class="text-2xl font-bold text-slate-800 mb-2">직무별 상세 R&R 매트릭스</h2>
+                    <h2 class="text-2xl font-bold text-slate-800 mb-2">직무�??�세 R&R 매트�?��</h2>
                     <p class="text-stone-600">
-                        각 직무의 핵심 역할(Main)과 부재 시 대행 역할(Sub)을 명확히 정의합니다.
-                        <br><span class="text-sm text-red-500">* 카드를 클릭하면 상세 업무와 적용 알고리즘을 볼 수 있습니다.</span>
+                        �?직무???�심 ??��(Main)�?부?????�????��(Sub)??명확???�의?�니??
+                        <br><span class="text-sm text-red-500">* 카드�??�릭?�면 ?�세 ?�무?� ?�용 ?�고리즘??�????�습?�다.</span>
                     </p>
-                </div >
+                </div>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" id="role-grid">
                         ${appData.roles.map(role => createRoleCard(role)).join('')}
                     </div>
@@ -1248,7 +1248,7 @@
                                 </div>
                             </div>
                             <button class="text-stone-400 hover:text-slate-600">
-                                <span id="icon-${role.id}">▼</span>
+                                <span id="icon-${role.id}">??/span>
                             </button>
                         </div>
                         <p class="mt-4 text-stone-600 leading-snug">${role.summary}</p>
@@ -1259,7 +1259,7 @@
 
                         <!-- KPIs -->
                         <div class="mb-4">
-                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">핵심 성과 지표 (KPI)</h4>
+                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">?�심 ?�과 지??(KPI)</h4>
                             <div class="flex flex-wrap gap-2">
                                 ${role.kpi.map(k => `<span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-medium">${k}</span>`).join('')}
                             </div>
@@ -1267,7 +1267,7 @@
 
                         <!-- Main Duties -->
                         <div class="mb-4">
-                            <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2 border-l-4 border-slate-600 pl-2">정(Main) 담당 업무</h4>
+                            <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2 border-l-4 border-slate-600 pl-2">??Main) ?�당 ?�무</h4>
                             <ul class="space-y-2 text-sm text-stone-700">
                                 ${role.main_duties.map(d => `
                                     <li class="flex items-start">
@@ -1280,11 +1280,11 @@
 
                         <!-- Sub Duties -->
                         <div class="mb-4">
-                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 border-l-4 border-stone-300 pl-2">부(Sub) 담당 업무 (백업)</h4>
+                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 border-l-4 border-stone-300 pl-2">부(Sub) ?�당 ?�무 (백업)</h4>
                             <ul class="space-y-2 text-sm text-stone-500">
                                 ${role.sub_duties.map(d => `
                                     <li class="flex items-start">
-                                        <span class="font-bold mr-2 w-20 flex-shrink-0">대행: ${d.role}</span>
+                                        <span class="font-bold mr-2 w-20 flex-shrink-0">?�?? ${d.role}</span>
                                         <span>${d.desc}</span>
                                     </li>
                                 `).join('')}
@@ -1293,11 +1293,11 @@
 
                         <!-- Algorithm -->
                         <div class="bg-slate-800 text-white p-3 rounded text-sm mt-4">
-                            <strong class="text-yellow-400">⚡ 업무 수행 알고리즘:</strong><br>
+                            <strong class="text-yellow-400">???�무 ?�행 ?�고리즘:</strong><br>
                                 ${role.algorithm}
                         </div>
                     </div>
-                </div >
+                </div>
                     `;
         }
 
@@ -1313,10 +1313,10 @@
 
             if (el.classList.contains('hidden')) {
                 el.classList.remove('hidden');
-                icon.innerText = '▲';
+                icon.innerText = '??;
             } else {
                 el.classList.add('hidden');
-                icon.innerText = '▼';
+                icon.innerText = '??;
             }
         }
 
@@ -1325,10 +1325,10 @@
             container.innerHTML = `
                     <div class="bg-white p-8 rounded-lg shadow-sm border border-stone-200" >
                     <div class="flex justify-between items-center mb-6">
-                        <h2 class="text-2xl font-bold text-slate-800">보고 및 의사결정 체계 (Two-Track)</h2>
+                        <h2 class="text-2xl font-bold text-slate-800">보고 �??�사결정 체계 (Two-Track)</h2>
                         <div class="flex space-x-2">
-                            <button onclick="setReportMode('routine')" id="btn-routine" class="px-4 py-2 rounded bg-slate-100 text-slate-600 font-bold hover:bg-slate-200 transition">🟢 일반 운영 (Run)</button>
-                            <button onclick="setReportMode('tf')" id="btn-tf" class="px-4 py-2 rounded bg-stone-100 text-stone-400 font-bold hover:bg-red-50 hover:text-red-600 transition">🔴 기획/혁신 (Change)</button>
+                            <button onclick="setReportMode('routine')" id="btn-routine" class="px-4 py-2 rounded bg-slate-100 text-slate-600 font-bold hover:bg-slate-200 transition">?�� ?�반 ?�영 (Run)</button>
+                            <button onclick="setReportMode('tf')" id="btn-tf" class="px-4 py-2 rounded bg-stone-100 text-stone-400 font-bold hover:bg-red-50 hover:text-red-600 transition">?�� 기획/?�신 (Change)</button>
                         </div>
                     </div>
 
@@ -1342,7 +1342,7 @@
                     <div id="flow-desc" class="mt-6 p-4 bg-blue-50 border border-blue-100 text-blue-800 rounded-lg text-sm">
                         <!-- Dynamic Description -->
                     </div>
-                </div >
+                </div>
                     `;
             setTimeout(() => setReportMode('routine'), 0); // Init
         }
@@ -1359,26 +1359,26 @@
                 btnTf.className = "px-4 py-2 rounded bg-stone-100 text-stone-400 font-bold hover:bg-red-50 hover:text-red-600 transition";
 
                 desc.innerHTML = `
-                    <strong class="block mb-1" >🟢 Track A: 일반 운영(Maintenance)</strong >
-                        모든 일상 업무(근태, 시설, 정산, 상담)는 <strong > 반드시 실장을 경유</strong > 합니다.실장이 1차 해결(전결)하고 중요 사항만 요약하여 부원장에게 보고합니다.
+                    <strong class="block mb-1" >?�� Track A: ?�반 ?�영(Maintenance)</strong >
+                        모든 ?�상 ?�무(근태, ?�설, ?�산, ?�담)??<strong > 반드???�장??경유</strong > ?�니???�장??1�??�결(?�결)?�고 중요 ?�항�??�약?�여 부?�장?�게 보고?�니??
                 `;
 
                 diagram.innerHTML = `
                             <div class="flex flex-col items-center space-y-8" >
                         <div class="w-full flex justify-center">
-                            <div class="bg-slate-800 text-white px-8 py-3 rounded-lg shadow-lg z-10">총괄 부원장 (최종 승인)</div>
+                            <div class="bg-slate-800 text-white px-8 py-3 rounded-lg shadow-lg z-10">총괄 부?�장 (최종 ?�인)</div>
                         </div>
                         <div class="h-12 w-0.5 bg-blue-400"></div> <!--Line -->
                         <div class="w-full flex justify-center">
-                            <div class="bg-white border-2 border-blue-500 text-slate-800 px-8 py-3 rounded-lg shadow-md z-10 font-bold">운영 실장 (1차 해결/취합)</div>
+                            <div class="bg-white border-2 border-blue-500 text-slate-800 px-8 py-3 rounded-lg shadow-md z-10 font-bold">?�영 ?�장 (1�??�결/취합)</div>
                         </div>
                         <div class="h-12 w-0.5 bg-blue-400"></div> <!--Line -->
                     <div class="w-full flex justify-center space-x-4">
-                        <div class="bg-white border border-stone-300 px-4 py-2 rounded text-stone-600 text-sm">대리(남)</div>
-                        <div class="bg-white border border-stone-300 px-4 py-2 rounded text-stone-600 text-sm">대리(여)</div>
-                        <div class="bg-white border border-stone-300 px-4 py-2 rounded text-stone-600 text-sm">주임(여)</div>
+                        <div class="bg-white border border-stone-300 px-4 py-2 rounded text-stone-600 text-sm">?��???</div>
+                        <div class="bg-white border border-stone-300 px-4 py-2 rounded text-stone-600 text-sm">?��???</div>
+                        <div class="bg-white border border-stone-300 px-4 py-2 rounded text-stone-600 text-sm">주임(??</div>
                     </div>
-                    </div >
+                    </div>
                     <!--Animation Effect-- >
                     <div class="absolute top-0 bottom-0 left-1/2 w-full transform -translate-x-1/2 pointer-events-none">
                         <div class="absolute bottom-10 left-1/2 w-2 h-2 bg-blue-500 rounded-full animate-ping"></div>
@@ -1391,35 +1391,35 @@
                 btnTf.className = "px-4 py-2 rounded bg-red-600 text-white font-bold shadow-md";
 
                 desc.innerHTML = `
-                    <strong class="block mb-1" >🔴 Track B: 기획 / 혁신(Innovation)</strong >
-                        새로운 프로젝트(특강, 마케팅 전략)는 속도를 위해 <strong > TF팀이 부원장에게 직보</strong > 합니다.단, 실장에게는 '일정'을 공유(참조)하여 업무 충돌을 방지합니다.
+                    <strong class="block mb-1" >?�� Track B: 기획 / ?�신(Innovation)</strong >
+                        ?�로???�로?�트(?�강, 마�????�략)???�도�??�해 <strong > TF?�??부?�장?�게 직보</strong > ?�니???? ?�장?�게??'?�정'??공유(참조)?�여 ?�무 충돌??방�??�니??
                 `;
 
                 diagram.innerHTML = `
                             <div class="flex flex-col items-center relative h-[300px]" >
                         <!--Vice Director-- >
-                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white px-8 py-3 rounded-lg shadow-lg z-20">총괄 부원장 (기획 총괄)</div>
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white px-8 py-3 rounded-lg shadow-lg z-20">총괄 부?�장 (기획 총괄)</div>
                         
                         <!--Direct Line(Red)-- >
                         <div class="absolute top-10 left-1/2 h-[200px] w-0.5 bg-red-400 transform -translate-x-1/2 z-0"></div>
                         
                         <!--TF Team-- >
                         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-64 bg-red-50 border-2 border-red-500 p-4 rounded-lg text-center z-10 shadow-md">
-                            <p class="font-bold text-red-700 mb-1">TF팀 (기획/전략)</p>
+                            <p class="font-bold text-red-700 mb-1">TF?� (기획/?�략)</p>
                             <div class="flex justify-center space-x-2 text-xs text-red-600">
-                                <span>대리(기획)</span><span>주임(홍보)</span>
+                                <span>?��?기획)</span><span>주임(?�보)</span>
                             </div>
                         </div>
 
                         <!--Manager(Side Observer) -->
                         <div class="absolute top-1/2 right-0 transform translate-x-[-20%] bg-stone-100 border border-stone-300 text-stone-400 px-4 py-2 rounded-lg border-dashed">
-                            <span class="text-xs font-bold block">운영 실장</span>
-                            <span class="text-[10px]">(일정 참조 / 공유)</span>
+                            <span class="text-xs font-bold block">?�영 ?�장</span>
+                            <span class="text-[10px]">(?�정 참조 / 공유)</span>
                         </div>
                         
                         <!--Dotted Line to Manager-- >
                     <div class="absolute top-[60%] left-1/2 w-[30%] border-t-2 border-dashed border-stone-300 transform"></div>
-                    </div >
+                    </div>
                     `;
             }
         }
@@ -1430,51 +1430,51 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8" >
                     <!--Daily Rotation Chart-- >
                     <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
-                        <h2 class="text-xl font-bold text-slate-800 mb-4">⏰ 3교대 근무 시스템</h2>
+                        <h2 class="text-xl font-bold text-slate-800 mb-4">??3교�? 근무 ?�스??/h2>
                         <div class="chart-container">
                             <canvas id="shiftChart"></canvas>
                         </div>
                         <ul class="mt-4 space-y-2 text-sm text-stone-600">
-                            <li><strong>🌅 새벽조 (1명):</strong> 5주 간격 로테이션 (부원장 포함). 문 개방, 아침 모의고사 인쇄.</li>
-                            <li><strong>☀️ 아침조 (2명):</strong> 행정 마감, 피크타임 상담.</li>
-                            <li><strong>🌙 오후조 (2명):</strong> <span class="text-red-600 font-bold">편집 숙련자 필참.</span> 야간 수업 및 익일 모의고사 편집.</li>
+                            <li><strong>?�� ?�벽�?(1�?:</strong> 5�?간격 로테?�션 (부?�장 ?�함). �?개방, ?�침 모의고사 ?�쇄.</li>
+                            <li><strong>?��??�침�?(2�?:</strong> ?�정 마감, ?�크?�???�담.</li>
+                            <li><strong>?�� ?�후�?(2�?:</strong> <span class="text-red-600 font-bold">?�집 ?�련???�참.</span> ?�간 ?�업 �??�일 모의고사 ?�집.</li>
                         </ul>
                     </div>
 
                     <!--Seasonal TF-- >
                     <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
-                        <h2 class="text-xl font-bold text-slate-800 mb-4">🚨 시즌제 비상 근무 (TF)</h2>
+                        <h2 class="text-xl font-bold text-slate-800 mb-4">?�� ?�즌??비상 근무 (TF)</h2>
                         <div class="space-y-4">
                             <div class="bg-red-50 border-l-4 border-red-500 p-4">
-                                <h3 class="font-bold text-red-800">문제풀이 시즌 (9주간)</h3>
-                                <p class="text-sm text-red-600 mt-1">전 직원이 모의고사 편집 요원으로 투입됩니다.</p>
+                                <h3 class="font-bold text-red-800">문제?�???�즌 (9주간)</h3>
+                                <p class="text-sm text-red-600 mt-1">??직원??모의고사 ?�집 ?�원?�로 ?�입?�니??</p>
                             </div>
 
                             <div class="grid grid-cols-1 gap-2">
                                 <div class="flex items-center justify-between bg-white border border-stone-200 p-2 rounded">
-                                    <span class="text-sm font-bold">형사법</span>
-                                    <span class="text-xs bg-slate-100 px-2 py-1 rounded">실장 (난이도 최상)</span>
+                                    <span class="text-sm font-bold">?�사�?/span>
+                                    <span class="text-xs bg-slate-100 px-2 py-1 rounded">?�장 (?�이??최상)</span>
                                 </div>
                                 <div class="flex items-center justify-between bg-white border border-stone-200 p-2 rounded">
-                                    <span class="text-sm font-bold">경찰학</span>
-                                    <span class="text-xs bg-slate-100 px-2 py-1 rounded">대리(남) (분량 많음)</span>
+                                    <span class="text-sm font-bold">경찰??/span>
+                                    <span class="text-xs bg-slate-100 px-2 py-1 rounded">?��??? (분량 많음)</span>
                                 </div>
                                 <div class="flex items-center justify-between bg-white border border-stone-200 p-2 rounded">
-                                    <span class="text-sm font-bold">헌법</span>
-                                    <span class="text-xs bg-slate-100 px-2 py-1 rounded">대리(여) (꼼꼼함)</span>
+                                    <span class="text-sm font-bold">?�법</span>
+                                    <span class="text-xs bg-slate-100 px-2 py-1 rounded">?��??? (꼼꼼??</span>
                                 </div>
                                 <div class="flex items-center justify-between bg-white border border-stone-200 p-2 rounded">
-                                    <span class="text-sm font-bold">범죄학/기타</span>
-                                    <span class="text-xs bg-slate-100 px-2 py-1 rounded">주임(여) (마케팅 병행)</span>
+                                    <span class="text-sm font-bold">범죄??기�?</span>
+                                    <span class="text-xs bg-slate-100 px-2 py-1 rounded">주임(?? (마�???병행)</span>
                                 </div>
                                 <div class="flex items-center justify-between bg-slate-800 text-white p-2 rounded">
-                                    <span class="text-sm font-bold">최종 검수 (QC)</span>
-                                    <span class="text-xs bg-slate-600 px-2 py-1 rounded">부원장</span>
+                                    <span class="text-sm font-bold">최종 검??(QC)</span>
+                                    <span class="text-xs bg-slate-600 px-2 py-1 rounded">부?�장</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div >
+                </div>
                     `;
             setTimeout(initShiftChart, 100);
         }
@@ -1492,7 +1492,7 @@
             new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['새벽조 (07:30)', '아침조 (08:30)', '오후조 (13:30)'],
+                    labels: ['?�벽�?(07:30)', '?�침�?(08:30)', '?�후�?(13:30)'],
                     datasets: [{
                         data: [1, 2, 2],
                         backgroundColor: ['#f59e0b', '#3b82f6', '#1e293b'],
@@ -1512,33 +1512,33 @@
         function renderUtility(container) {
             container.innerHTML = `
                     <div class="bg-white p-8 rounded-lg shadow-sm border border-stone-200" >
-                    <h2 class="text-2xl font-bold text-slate-800 mb-6">🛠️ 실무 유틸리티 (Execution Tools)</h2>
+                    <h2 class="text-2xl font-bold text-slate-800 mb-6">?���??�무 ?�틸리티 (Execution Tools)</h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
                         <!-- 1. Daily Routine Generator -->
                         <div class="bg-stone-50 p-5 rounded-lg border border-stone-200 flex flex-col">
                             <h3 class="font-bold text-base mb-3 text-emerald-700 flex items-center">
-                                <span class="text-xl mr-2">✅</span> 일일 루틴 체크리스트
+                                <span class="text-xl mr-2">??/span> ?�일 루틴 체크리스??
                             </h3>
                             <div class="space-y-3 flex-grow">
                                 <div>
-                                    <label class="block text-xs font-bold text-stone-600 uppercase mb-1">근무조</label>
+                                    <label class="block text-xs font-bold text-stone-600 uppercase mb-1">근무�?/label>
                                     <select id="routine-shift" class="w-full p-2 border border-stone-300 rounded text-xs">
-                                        <option value="dawn">🌅 새벽조 (07:30)</option>
-                                        <option value="morning">☀️ 아침조 (08:30)</option>
-                                        <option value="afternoon">🌙 오후조 (13:30)</option>
+                                        <option value="dawn">?�� ?�벽�?(07:30)</option>
+                                        <option value="morning">?��??�침�?(08:30)</option>
+                                        <option value="afternoon">?�� ?�후�?(13:30)</option>
                                     </select>
                                 </div>
                                 <div>
                                     <label class="block text-xs font-bold text-stone-600 uppercase mb-1">직책</label>
                                     <select id="routine-role" class="w-full p-2 border border-stone-300 rounded text-xs">
-                                        <option value="head">실장</option>
-                                        <option value="manager_m">대리(남)</option>
-                                        <option value="manager_f">대리(여)</option>
-                                        <option value="chief">주임(여)</option>
+                                        <option value="head">?�장</option>
+                                        <option value="manager_m">?��???</option>
+                                        <option value="manager_f">?��???</option>
+                                        <option value="chief">주임(??</option>
                                     </select>
                                 </div>
-                                <button onclick="generateRoutine()" class="w-full bg-emerald-600 text-white py-2 rounded font-bold hover:bg-emerald-700 transition text-xs">생성</button>
+                                <button onclick="generateRoutine()" class="w-full bg-emerald-600 text-white py-2 rounded font-bold hover:bg-emerald-700 transition text-xs">?�성</button>
                             </div>
                             <div id="routine-output" class="mt-3 hidden bg-white border border-stone-200 rounded p-3 text-xs max-h-40 overflow-y-auto"></div>
                         </div>
@@ -1546,7 +1546,7 @@
                         <!-- 2. Goal Tracker -->
                         <div class="bg-stone-50 p-5 rounded-lg border border-stone-200 flex flex-col">
                             <h3 class="font-bold text-base mb-3 text-blue-700 flex items-center">
-                                <span class="text-xl mr-2">📈</span> 목표 달성 시뮬레이터
+                                <span class="text-xl mr-2">?��</span> 목표 ?�성 ?��??�이??
                             </h3>
                             <div class="space-y-2 flex-grow">
                                 <div class="grid grid-cols-2 gap-2">
@@ -1555,13 +1555,13 @@
                                         <input type="number" id="goal-total" value="5000" class="w-full p-1.5 border border-stone-300 rounded text-xs">
                                     </div>
                                     <div>
-                                        <label class="block text-[10px] font-bold text-stone-600 uppercase">현재(만원)</label>
+                                        <label class="block text-[10px] font-bold text-stone-600 uppercase">?�재(만원)</label>
                                         <input type="number" id="goal-current" value="3200" class="w-full p-1.5 border border-stone-300 rounded text-xs">
                                     </div>
                                 </div>
                                 <div class="grid grid-cols-2 gap-2">
                                     <div>
-                                        <label class="block text-[10px] font-bold text-stone-600 uppercase">남은일수</label>
+                                        <label class="block text-[10px] font-bold text-stone-600 uppercase">?��??�수</label>
                                         <input type="number" id="goal-days" value="10" class="w-full p-1.5 border border-stone-300 rounded text-xs">
                                     </div>
                                     <div>
@@ -1577,18 +1577,18 @@
                         <!-- 3. D-Day Scheduler -->
                         <div class="bg-stone-50 p-5 rounded-lg border border-stone-200 flex flex-col">
                             <h3 class="font-bold text-base mb-3 text-rose-700 flex items-center">
-                                <span class="text-xl mr-2">📅</span> 행사 준비 역산기
+                                <span class="text-xl mr-2">?��</span> ?�사 준�???���?
                             </h3>
                             <div class="space-y-3 flex-grow">
                                 <div>
-                                    <label class="block text-xs font-bold text-stone-600 uppercase mb-1">행사명</label>
-                                    <input type="text" id="event-name" placeholder="예: 썸머스쿨" class="w-full p-2 border border-stone-300 rounded text-xs">
+                                    <label class="block text-xs font-bold text-stone-600 uppercase mb-1">?�사�?/label>
+                                    <input type="text" id="event-name" placeholder="?? ?�머?�쿨" class="w-full p-2 border border-stone-300 rounded text-xs">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-bold text-stone-600 uppercase mb-1">D-Day</label>
                                     <input type="date" id="event-date" class="w-full p-2 border border-stone-300 rounded text-xs">
                                 </div>
-                                <button onclick="calculateDDay()" class="w-full bg-rose-600 text-white py-2 rounded font-bold hover:bg-rose-700 transition text-xs">스케줄 생성</button>
+                                <button onclick="calculateDDay()" class="w-full bg-rose-600 text-white py-2 rounded font-bold hover:bg-rose-700 transition text-xs">?��?�??�성</button>
                             </div>
                             <div id="dday-result" class="mt-3 hidden p-2 bg-white border border-stone-200 rounded text-xs max-h-40 overflow-y-auto"></div>
                         </div>
@@ -1596,24 +1596,24 @@
                         <!-- 4. NEW: Marketing Action Planner -->
                         <div class="bg-stone-50 p-5 rounded-lg border border-stone-200 flex flex-col">
                             <h3 class="font-bold text-base mb-3 text-purple-700 flex items-center">
-                                <span class="text-xl mr-2">📢</span> 마케팅 실무 체크리스트
+                                <span class="text-xl mr-2">?��</span> 마�????�무 체크리스??
                             </h3>
-                            <p class="text-[10px] text-stone-500 mb-3">마케팅 담당자에게 "이것만 해"라고 줄 수 있는 구체적인 할 일을 생성합니다.</p>
+                            <p class="text-[10px] text-stone-500 mb-3">마�????�당?�에�?"?�것�????�고 �????�는 구체?�인 ???�을 ?�성?�니??</p>
                             <div class="space-y-3 flex-grow">
                                 <div>
-                                    <label class="block text-xs font-bold text-stone-600 uppercase mb-1">현재 시즌</label>
+                                    <label class="block text-xs font-bold text-stone-600 uppercase mb-1">?�재 ?�즌</label>
                                     <select id="mkt-season" class="w-full p-2 border border-stone-300 rounded text-xs">
-                                        <option value="normal">🌱 평수기 (브랜딩/관리)</option>
-                                        <option value="recruitment">🔥 모집기 (개강/특강)</option>
-                                        <option value="exam">🚨 시험직전 (응원/적중)</option>
+                                        <option value="normal">?�� ?�수�?(브랜??관�?</option>
+                                        <option value="recruitment">?�� 모집�?(개강/?�강)</option>
+                                        <option value="exam">?�� ?�험직전 (?�원/?�중)</option>
                                     </select>
                                 </div>
-                                <button onclick="generateMarketingPlan()" class="w-full bg-purple-600 text-white py-2 rounded font-bold hover:bg-purple-700 transition text-xs">업무 리스트 생성</button>
+                                <button onclick="generateMarketingPlan()" class="w-full bg-purple-600 text-white py-2 rounded font-bold hover:bg-purple-700 transition text-xs">?�무 리스???�성</button>
                             </div>
                             <div id="mkt-result" class="mt-3 hidden bg-white border border-stone-200 rounded p-3 text-xs max-h-40 overflow-y-auto"></div>
                         </div>
                     </div>
-                </div >
+                </div>
                     `;
         }
 
@@ -1628,34 +1628,34 @@
 
             // Common Shift Tasks
             if (shift === 'dawn') {
-                tasks.push({ time: '07:30', task: '학원 전체 문 개방 및 소등 해제' });
-                tasks.push({ time: '07:35', task: '냉난방기 가동 및 환기' });
-                tasks.push({ time: '07:40', task: '아침 모의고사 인쇄 및 분류 (전날 편집본)' });
-                tasks.push({ time: '08:00', task: '강의실 입실 및 시험지 배부' });
+                tasks.push({ time: '07:30', task: '?�원 ?�체 �?개방 �??�등 ?�제' });
+                tasks.push({ time: '07:35', task: '?�난방기 가??�??�기' });
+                tasks.push({ time: '07:40', task: '?�침 모의고사 ?�쇄 �?분류 (?�날 ?�집�?' });
+                tasks.push({ time: '08:00', task: '강의???�실 �??�험지 배�?' });
             } else if (shift === 'morning') {
-                tasks.push({ time: '08:30', task: '데스크 인수인계 사항 확인' });
-                tasks.push({ time: '09:00', task: '전일 매출 집계 확인 및 시재 점검' });
-                tasks.push({ time: '10:00', task: '오전 전화 응대 및 부재중 콜백' });
+                tasks.push({ time: '08:30', task: '?�스???�수?�계 ?�항 ?�인' });
+                tasks.push({ time: '09:00', task: '?�일 매출 집계 ?�인 �??�재 ?��?' });
+                tasks.push({ time: '10:00', task: '?�전 ?�화 ?��? �?부?�중 콜백' });
             } else if (shift === 'afternoon') {
-                tasks.push({ time: '13:30', task: '오후 데스크 교대 및 특이사항 체크' });
-                tasks.push({ time: '18:00', task: '저녁 심화강의실 세팅 (마이크/분필/물)' });
-                tasks.push({ time: '19:00', task: '🔴 [필수] 익일 아침 모의고사 편집 및 검수' });
-                tasks.push({ time: '21:30', task: '일일 매출 마감 및 소등/문단속' });
+                tasks.push({ time: '13:30', task: '?�후 ?�스??교�? �??�이?�항 체크' });
+                tasks.push({ time: '18:00', task: '?�???�화강의???�팅 (마이??분필/�?' });
+                tasks.push({ time: '19:00', task: '?�� [?�수] ?�일 ?�침 모의고사 ?�집 �?검?? });
+                tasks.push({ time: '21:30', task: '?�일 매출 마감 �??�등/문단?? });
             }
 
             // Role Specific Additions
             if (role === 'head') {
-                if (shift === 'morning') tasks.push({ time: '11:00', task: '직원 근태 확인 및 업무 지시' });
-                tasks.push({ time: '상시', task: '상담 총괄 및 민원 1차 해결' });
+                if (shift === 'morning') tasks.push({ time: '11:00', task: '직원 근태 ?�인 �??�무 지?? });
+                tasks.push({ time: '?�시', task: '?�담 총괄 �?민원 1�??�결' });
             } else if (role === 'manager_m') {
-                tasks.push({ time: '상시', task: '강의실/독서실 시설 순찰 및 수리' });
-                if (shift === 'afternoon') tasks.push({ time: '20:00', task: '교재 택배 발송 마감' });
+                tasks.push({ time: '?�시', task: '강의???�서???�설 ?�찰 �??�리' });
+                if (shift === 'afternoon') tasks.push({ time: '20:00', task: '교재 ?�배 발송 마감' });
             } else if (role === 'manager_f') {
-                if (shift === 'morning') tasks.push({ time: '14:00', task: '은행 업무 및 회계 정리' });
-                tasks.push({ time: '상시', task: '합격자 데이터 정리 및 강사 의전' });
+                if (shift === 'morning') tasks.push({ time: '14:00', task: '?�???�무 �??�계 ?�리' });
+                tasks.push({ time: '?�시', task: '?�격???�이???�리 �?강사 ?�전' });
             } else if (role === 'chief') {
-                if (shift === 'afternoon') tasks.push({ time: '14:00', task: '마케팅 외주 업체 소스 전송' });
-                tasks.push({ time: '상시', task: '독서실/사물함 접수 대장 관리' });
+                if (shift === 'afternoon') tasks.push({ time: '14:00', task: '마�????�주 ?�체 ?�스 ?�송' });
+                tasks.push({ time: '?�시', task: '?�서???�물???�수 ?�??관�? });
             }
 
             // Sort by time (simple sort)
@@ -1680,7 +1680,7 @@
             const res = document.getElementById('goal-result');
 
             if (days <= 0) {
-                res.innerHTML = "남은 일수를 확인해주세요.";
+                res.innerHTML = "?��? ?�수�??�인?�주?�요.";
                 res.classList.remove('hidden');
                 return;
             }
@@ -1693,14 +1693,14 @@
             let message = "";
 
             if (remainingAmount <= 0) {
-                message = "🎉 이미 목표를 달성했습니다! 초과 달성에 도전하세요!";
+                message = "?�� ?��? 목표�??�성?�습?�다! 초과 ?�성???�전?�세??";
                 messageClass = "text-green-700 font-bold";
             } else {
                 message = `
-                    <div class="text-xs text-blue-600 mb-1" > 목표까지 <strong class="text-red-600" > ${remainingAmount.toLocaleString()}만원</strong > 남았습니다.</div >
-                    <div class="text-lg font-bold text-slate-800 mb-1">오늘 목표: ${dailyAmount.toLocaleString()} 만원</div>
+                    <div class="text-xs text-blue-600 mb-1" > 목표까�? <strong class="text-red-600" > ${remainingAmount.toLocaleString()}만원</strong > ?�았?�니??</div>
+                    <div class="text-lg font-bold text-slate-800 mb-1">?�늘 목표: ${dailyAmount.toLocaleString()} 만원</div>
                     <div class="bg-white rounded p-1 mt-1 border border-blue-200">
-                        👉 오늘 <strong class="text-red-600 text-lg">${dailyCount}명</strong>만 등록시키면 됩니다!
+                        ?�� ?�늘 <strong class="text-red-600 text-lg">${dailyCount}�?/strong>�??�록?�키�??�니??
                     </div>
                 `;
             }
@@ -1716,7 +1716,7 @@
             const res = document.getElementById('dday-result');
 
             if (!name || !dateVal) {
-                res.innerText = "행사명과 날짜를 입력해주세요.";
+                res.innerText = "?�사명과 ?�짜�??�력?�주?�요.";
                 res.classList.remove('hidden');
                 return;
             }
@@ -1731,15 +1731,15 @@
             };
 
             const schedule = [
-                { d: 'D-30', date: subDays(dday, 30), task: '기획안 확정 및 TF팀 발족', owner: '부원장' },
-                { d: 'D-21', date: subDays(dday, 21), task: '홈페이지 배너 및 블로그 홍보 시작', owner: '주임(여)' },
-                { d: 'D-14', date: subDays(dday, 14), task: '교재 주문 및 문자 발송(1차)', owner: '실장/대리(남)' },
-                { d: 'D-7', date: subDays(dday, 7), task: '시설 점검 및 신청자 중간 집계', owner: '실장' },
-                { d: 'D-1', date: subDays(dday, 1), task: '최종 리마인드 문자 및 강의실 세팅', owner: '전 직원' },
-                { d: 'D-Day', date: dateVal, task: `🎉 ${name} 당일 운영`, owner: '실장 총괄' }
+                { d: 'D-30', date: subDays(dday, 30), task: '기획???�정 �?TF?� 발족', owner: '부?�장' },
+                { d: 'D-21', date: subDays(dday, 21), task: '?�페?��? 배너 �?블로�??�보 ?�작', owner: '주임(??' },
+                { d: 'D-14', date: subDays(dday, 14), task: '교재 주문 �?문자 발송(1�?', owner: '?�장/?��???' },
+                { d: 'D-7', date: subDays(dday, 7), task: '?�설 ?��? �??�청??중간 집계', owner: '?�장' },
+                { d: 'D-1', date: subDays(dday, 1), task: '최종 리마?�드 문자 �?강의???�팅', owner: '??직원' },
+                { d: 'D-Day', date: dateVal, task: `?�� ${name} ?�일 ?�영`, owner: '?�장 총괄' }
             ];
 
-            res.innerHTML = `<h4 class="font-bold text-rose-800 mb-2" > ${name} 준비 일정</h4 > <ul class="space-y-1 text-xs">` +
+            res.innerHTML = `<h4 class="font-bold text-rose-800 mb-2" > ${name} 준�??�정</h4 > <ul class="space-y-1 text-xs">` +
                 schedule.map(s => `
                     <li class="flex justify-between items-center border-b border-stone-100 pb-1">
                         <div>
@@ -1761,24 +1761,24 @@
 
             if (season === 'normal') {
                 tasks = [
-                    { type: 'SNS', task: '학원 일상(급식, 자습실) 사진 3장 촬영 후 외주 전달' },
-                    { type: '바이럴', task: '경시모/경꿈사 "지역+경찰학원" 키워드 검색 및 여론 체크 (주 3회)' },
-                    { type: '콘텐츠', task: '합격생/재원생 인터뷰 1명 진행 (합격수기 소스 확보)' },
-                    { type: 'DB', task: '미등록 상담자 안부 문자 발송 (무료 특강 미끼 투척)' }
+                    { type: 'SNS', task: '?�원 ?�상(급식, ?�습?? ?�진 3??촬영 ???�주 ?�달' },
+                    { type: '바이??, task: '경시�?경꿈??"지??경찰?�원" ?�워??검??�??�론 체크 (�?3??' },
+                    { type: '콘텐�?, task: '?�격???�원???�터�?1�?진행 (?�격?�기 ?�스 ?�보)' },
+                    { type: 'DB', task: '미등�??�담???��? 문자 발송 (무료 ?�강 미끼 ?�척)' }
                 ];
             } else if (season === 'recruitment') {
                 tasks = [
-                    { type: 'SNS', task: '개강 D-Day 카운트다운 카드뉴스 제작 요청 (디자이너에게)' },
-                    { type: '바이럴', task: '주요 커뮤니티 "수강료/시간표" 질문글에 쪽지/댓글 작업' },
-                    { type: '문자', task: '기존 DB 대상 "조기등록 할인 마감임박" 전체 문자 발송' },
-                    { type: '현장', task: '원내 게시판 및 배너 "마감임박" 딱지 부착' }
+                    { type: 'SNS', task: '개강 D-Day 카운?�다??카드?�스 ?�작 ?�청 (?�자?�너?�게)' },
+                    { type: '바이??, task: '주요 커�??�티 "?�강�??�간?? 질문글??쪽�?/?��? ?�업' },
+                    { type: '문자', task: '기존 DB ?�??"조기?�록 ?�인 마감?�박" ?�체 문자 발송' },
+                    { type: '?�장', task: '?�내 게시??�?배너 "마감?�박" ?��? 부�? }
                 ];
             } else if (season === 'exam') {
                 tasks = [
-                    { type: '콘텐츠', task: '강사님 "파이널 찍기" 숏폼 영상 촬영 (폰으로 1분 컷)' },
-                    { type: 'SNS', task: '시험 응원 간식 이벤트 공지 올리기' },
-                    { type: '바이럴', task: '시험 직후 "가답안/해설강의" 우리 학원이 제일 빠르다고 홍보' },
-                    { type: 'DB', task: '시험장 응원 캠페인 문자 발송' }
+                    { type: '콘텐�?, task: '강사??"?�이??찍기" ?�폼 ?�상 촬영 (?�으�?1�?�?' },
+                    { type: 'SNS', task: '?�험 ?�원 간식 ?�벤??공�? ?�리�? },
+                    { type: '바이??, task: '?�험 직후 "가?�안/?�설강의" ?�리 ?�원???�일 빠르?�고 ?�보' },
+                    { type: 'DB', task: '?�험???�원 캠페??문자 발송' }
                 ];
             }
 
@@ -1796,21 +1796,21 @@
         function renderToolkit(container) {
             container.innerHTML = `
                         <div class="bg-white p-8 rounded-lg shadow-sm border border-stone-200" >
-                    <h2 class="text-2xl font-bold text-slate-800 mb-6">🧠 스마트 업무 해결 알고리즘</h2>
+                    <h2 class="text-2xl font-bold text-slate-800 mb-6">?�� ?�마???�무 ?�결 ?�고리즘</h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-8">
                         <!-- Fogg Model Input -->
                         <div class="bg-stone-50 p-6 rounded-lg border border-stone-200 flex flex-col h-full">
-                            <h3 class="font-bold text-lg mb-4 text-indigo-700">포그 행동 모델 (등록 유도)</h3>
-                            <p class="text-sm text-stone-500 mb-4">학생 등록 유도 문자나 상담 멘트가 막힐 때 사용하세요.</p>
+                            <h3 class="font-bold text-lg mb-4 text-indigo-700">?�그 ?�동 모델 (?�록 ?�도)</h3>
+                            <p class="text-sm text-stone-500 mb-4">?�생 ?�록 ?�도 문자???�담 멘트가 막힐 ???�용?�세??</p>
                             <div class="space-y-3 flex-grow">
                                 <div>
-                                    <label class="block text-xs font-bold text-stone-600 uppercase">타겟 상황 (Target)</label>
-                                    <input type="text" id="fogg-target" placeholder="예: 설명회 참석 후 미등록 학생" class="w-full p-2 border border-stone-300 rounded text-sm">
+                                    <label class="block text-xs font-bold text-stone-600 uppercase">?��??�황 (Target)</label>
+                                    <input type="text" id="fogg-target" placeholder="?? ?�명??참석 ??미등�??�생" class="w-full p-2 border border-stone-300 rounded text-sm">
                                 </div>
                                 <button onclick="solveFoggWithAI()" class="w-full bg-indigo-600 text-white py-2 rounded font-bold hover:bg-indigo-700 transition flex justify-center items-center">
                                     <span id="fogg-loading" class="ai-loading hidden mr-2"></span>
-                                    <span>✨ AI 문자 생성</span>
+                                    <span>??AI 문자 ?�성</span>
                                 </button>
                             </div>
                             <div id="fogg-result" class="mt-4 text-sm font-medium text-indigo-800 hidden bg-indigo-50 p-4 rounded border border-indigo-100 leading-relaxed whitespace-pre-wrap"></div>
@@ -1818,16 +1818,16 @@
 
                         <!-- 5 Whys Input -->
                         <div class="bg-stone-50 p-6 rounded-lg border border-stone-200 flex flex-col h-full">
-                            <h3 class="font-bold text-lg mb-4 text-teal-700">5 Whys (근본 원인 분석)</h3>
-                            <p class="text-sm text-stone-500 mb-4">반복되는 문제의 진짜 원인과 해결책을 분석합니다.</p>
+                            <h3 class="font-bold text-lg mb-4 text-teal-700">5 Whys (근본 ?�인 분석)</h3>
+                            <p class="text-sm text-stone-500 mb-4">반복?�는 문제??진짜 ?�인�??�결책을 분석?�니??</p>
                             <div class="space-y-3 flex-grow">
                                 <div>
-                                    <label class="block text-xs font-bold text-stone-600 uppercase">발생한 문제</label>
-                                    <input type="text" id="why-problem" placeholder="예: 매주 월요일 지각생 폭증" class="w-full p-2 border border-stone-300 rounded text-sm">
+                                    <label class="block text-xs font-bold text-stone-600 uppercase">발생??문제</label>
+                                    <input type="text" id="why-problem" placeholder="?? 매주 ?�요??지각생 ??��" class="w-full p-2 border border-stone-300 rounded text-sm">
                                 </div>
                                 <button onclick="solveWhyWithAI()" class="w-full bg-teal-600 text-white py-2 rounded font-bold hover:bg-teal-700 transition flex justify-center items-center">
                                     <span id="why-loading" class="ai-loading hidden mr-2"></span>
-                                    <span>✨ AI 심층 분석</span>
+                                    <span>??AI ?�층 분석</span>
                                 </button>
                             </div>
                             <div id="why-result" class="mt-4 text-sm text-teal-800 hidden bg-teal-50 p-4 rounded border border-teal-100 leading-relaxed whitespace-pre-wrap"></div>
@@ -1835,16 +1835,16 @@
 
                         <!-- Counseling Script Generator -->
                         <div class="bg-rose-50 p-6 rounded-lg border border-rose-200 flex flex-col h-full">
-                            <h3 class="font-bold text-lg mb-4 text-rose-700">🛡️ 상담 방어 스크립트</h3>
-                            <p class="text-sm text-stone-500 mb-4">환불, 컴플레인 등 까다로운 상황의 대화 대본을 생성합니다.</p>
+                            <h3 class="font-bold text-lg mb-4 text-rose-700">?���??�담 방어 ?�크립트</h3>
+                            <p class="text-sm text-stone-500 mb-4">?�불, 컴플?�인 ??까다로운 ?�황???�???�본을 ?�성?�니??</p>
                             <div class="space-y-3 flex-grow">
                                 <div>
-                                    <label class="block text-xs font-bold text-stone-600 uppercase">민원 내용</label>
-                                    <input type="text" id="script-target" placeholder="예: 전액 환불 요구하며 고성" class="w-full p-2 border border-stone-300 rounded text-sm">
+                                    <label class="block text-xs font-bold text-stone-600 uppercase">민원 ?�용</label>
+                                    <input type="text" id="script-target" placeholder="?? ?�액 ?�불 ?�구?�며 고성" class="w-full p-2 border border-stone-300 rounded text-sm">
                                 </div>
                                 <button onclick="generateScriptWithAI()" class="w-full bg-rose-600 text-white py-2 rounded font-bold hover:bg-rose-700 transition flex justify-center items-center">
                                     <span id="script-loading" class="ai-loading hidden mr-2"></span>
-                                    <span>✨ AI 대본 생성</span>
+                                    <span>??AI ?��??�성</span>
                                 </button>
                             </div>
                             <div id="script-result" class="mt-4 text-sm font-medium text-rose-800 hidden bg-rose-50 p-4 rounded border border-rose-100 leading-relaxed whitespace-pre-wrap"></div>
@@ -1852,16 +1852,16 @@
 
                         <!-- NEW: Staff Feedback Coach -->
                         <div class="bg-amber-50 p-6 rounded-lg border border-amber-200 flex flex-col h-full">
-                            <h3 class="font-bold text-lg mb-4 text-amber-700">💌 직원 피드백 코칭</h3>
-                            <p class="text-sm text-stone-500 mb-4">실장님이 직원에게 지적하거나 칭찬할 때 쓸 멘트를 만들어줍니다.</p>
+                            <h3 class="font-bold text-lg mb-4 text-amber-700">?�� 직원 ?�드�?코칭</h3>
+                            <p class="text-sm text-stone-500 mb-4">?�장?�이 직원?�게 지?�하거나 �?��??????멘트�?만들?�줍?�다.</p>
                             <div class="space-y-3 flex-grow">
                                 <div>
-                                    <label class="block text-xs font-bold text-stone-600 uppercase">상황 및 대상</label>
-                                    <input type="text" id="feedback-target" placeholder="예: 김대리 3일 연속 지각" class="w-full p-2 border border-stone-300 rounded text-sm">
+                                    <label class="block text-xs font-bold text-stone-600 uppercase">?�황 �??�??/label>
+                                    <input type="text" id="feedback-target" placeholder="?? 김?��?3???�속 지�? class="w-full p-2 border border-stone-300 rounded text-sm">
                                 </div>
                                 <div class="flex space-x-2">
-                                    <button onclick="generateFeedbackWithAI('scold')" class="flex-1 bg-amber-600 text-white py-2 rounded font-bold hover:bg-amber-700 transition text-xs">부드러운 지적</button>
-                                    <button onclick="generateFeedbackWithAI('praise')" class="flex-1 bg-emerald-600 text-white py-2 rounded font-bold hover:bg-emerald-700 transition text-xs">확실한 칭찬</button>
+                                    <button onclick="generateFeedbackWithAI('scold')" class="flex-1 bg-amber-600 text-white py-2 rounded font-bold hover:bg-amber-700 transition text-xs">부?�러??지??/button>
+                                    <button onclick="generateFeedbackWithAI('praise')" class="flex-1 bg-emerald-600 text-white py-2 rounded font-bold hover:bg-emerald-700 transition text-xs">?�실??�?��</button>
                                 </div>
                                 <div id="feedback-loading" class="hidden text-center"><div class="ai-loading"></div></div>
                             </div>
@@ -1871,22 +1871,22 @@
 
                     <!--1 - 3 - 1 Report Generator-- >
                     <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                        <h3 class="font-bold text-lg mb-4 text-slate-800">📝 1-3-1 보고서 생성기</h3>
-                        <p class="text-sm text-stone-500 mb-4">실장에게 받은 날것의 보고 내용을 입력하면, 대표님께 보고할 수 있는 깔끔한 '1-3-1 포맷'으로 변환해줍니다.</p>
+                        <h3 class="font-bold text-lg mb-4 text-slate-800">?�� 1-3-1 보고???�성�?/h3>
+                        <p class="text-sm text-stone-500 mb-4">?�장?�게 받�? ?�것??보고 ?�용???�력?�면, ?�?�님�?보고?????�는 깔끔??'1-3-1 ?�맷'?�로 변?�해줍니??</p>
 
                         <div class="space-y-3">
                             <div>
-                                <label class="block text-xs font-bold text-stone-600 uppercase">원문 내용 (Raw Data)</label>
-                                <textarea id="report-raw" rows="3" placeholder="예: 오늘 비와서 상담 2명밖에 안 왔어요. 근데 전화 문의는 좀 있었고..." class="w-full p-2 border border-stone-300 rounded text-sm"></textarea>
+                                <label class="block text-xs font-bold text-stone-600 uppercase">?�문 ?�용 (Raw Data)</label>
+                                <textarea id="report-raw" rows="3" placeholder="?? ?�늘 비�????�담 2명밖?????�어?? 근데 ?�화 문의??좀 ?�었�?.." class="w-full p-2 border border-stone-300 rounded text-sm"></textarea>
                             </div>
                             <button onclick="generateReportWithAI()" class="w-full bg-slate-700 text-white py-2 rounded font-bold hover:bg-slate-800 transition flex justify-center items-center">
                                 <span id="report-loading" class="ai-loading hidden mr-2"></span>
-                                <span>✨ 보고서 자동 생성</span>
+                                <span>??보고???�동 ?�성</span>
                             </button>
                         </div>
                         <div id="report-result" class="mt-4 text-sm font-medium text-slate-800 hidden bg-white p-4 rounded border border-slate-200 leading-relaxed whitespace-pre-wrap"></div>
                     </div>
-                </div >
+                </div>
                     `;
         }
 
@@ -1896,7 +1896,7 @@
             const loading = document.getElementById('report-loading');
 
             if (!raw) {
-                res.innerText = "보고 내용을 입력해주세요.";
+                res.innerText = "보고 ?�용???�력?�주?�요.";
                 res.classList.remove('hidden');
                 return;
             }
@@ -1905,13 +1905,13 @@
             res.classList.add('hidden');
 
             const prompt = `
-                원문: ${raw}
-                요청: 위 내용을 바탕으로 대표님께 보고할 '1-3-1 보고서'를 작성해주세요.
-                    형식:
-                1. 결론(1줄): 전체 요약(긍정 / 부정 판단 포함)
-                2. 근거(3가지): 수치나 팩트 위주로 3가지 포인트
-                3. 제안(1줄): 향후 계획이나 승인 요청 사항
-                어조: 정중하고 명확한 경영진 보고 톤.
+                ?�문: ${raw}
+                ?�청: ???�용??바탕?�로 ?�?�님�?보고??'1-3-1 보고??�??�성?�주?�요.
+                    ?�식:
+                1. 결론(1�?: ?�체 ?�약(긍정 / 부???�단 ?�함)
+                2. 근거(3가지): ?�치???�트 ?�주�?3가지 ?�인??
+                3. ?�안(1�?: ?�후 계획?�나 ?�인 ?�청 ?�항
+                ?�조: ?�중?�고 명확??경영�?보고 ??
             `;
 
             const aiResponse = await callGeminiAPI(prompt);
@@ -1927,7 +1927,7 @@
             const loading = document.getElementById('fogg-loading');
 
             if (!target) {
-                res.innerText = "상황을 입력해주세요.";
+                res.innerText = "?�황???�력?�주?�요.";
                 res.classList.remove('hidden');
                 return;
             }
@@ -1936,12 +1936,12 @@
             res.classList.add('hidden');
 
             const prompt = `
-                상황: ${target}
-                요청: 포그 행동 모델(Fogg Behavior Model, B = MAP)을 적용하여 이 학생들이 즉시 등록하도록 유도하는 문자 메시지(SMS) 내용 3가지 버전을 작성해주세요.
-                1. Motivation 강조형(공포 / 기회)
-                2. Ability 강조형(할인 / 혜택)
-                3. Prompt 강조형(마감임박)
-                각 문구는 한국경찰학원 실장이 보내는 것처럼 정중하면서도 강력해야 합니다.
+                ?�황: ${target}
+                ?�청: ?�그 ?�동 모델(Fogg Behavior Model, B = MAP)???�용?�여 ???�생?�이 즉시 ?�록?�도�??�도?�는 문자 메시지(SMS) ?�용 3가지 버전???�성?�주?�요.
+                1. Motivation 강조??공포 / 기회)
+                2. Ability 강조???�인 / ?�택)
+                3. Prompt 강조??마감?�박)
+                �?문구???�국경찰?�원 ?�장??보내??것처???�중?�면?�도 강력?�야 ?�니??
             `;
 
             const aiResponse = await callGeminiAPI(prompt);
@@ -1957,7 +1957,7 @@
             const loading = document.getElementById('why-loading');
 
             if (!problem) {
-                res.innerText = "문제를 입력해주세요.";
+                res.innerText = "문제�??�력?�주?�요.";
                 res.classList.remove('hidden');
                 return;
             }
@@ -1967,7 +1967,7 @@
 
             const prompt = `
                 문제: ${problem}
-                요청: '5 Whys' 기법을 사용하여 이 문제의 근본 원인을 파고드는 5단계 질문과 답변 시나리오를 작성하고, 최종적으로 근본적인 해결책(Root Cause Solution)을 제시해주세요.학원 운영의 관점에서 분석해주세요.
+                ?�청: '5 Whys' 기법???�용?�여 ??문제??근본 ?�인???�고?�는 5?�계 질문�??��? ?�나리오�??�성?�고, 최종?�으�?근본?�인 ?�결�?Root Cause Solution)???�시?�주?�요.?�원 ?�영??관?�에??분석?�주?�요.
             `;
 
             const aiResponse = await callGeminiAPI(prompt);
@@ -1983,7 +1983,7 @@
             const loading = document.getElementById('script-loading');
 
             if (!target) {
-                res.innerText = "상황을 입력해주세요.";
+                res.innerText = "?�황???�력?�주?�요.";
                 res.classList.remove('hidden');
                 return;
             }
@@ -1992,15 +1992,15 @@
             res.classList.add('hidden');
 
             const prompt = `
-                상황: ${target}
-                역할: 한국경찰학원 운영 실장(10년차 베테랑, 정중하지만 단호함)
-                요청: 위 상황에서 학생 / 학부모를 응대할 수 있는 '대화 스크립트'를 작성해주세요.
-                    단계:
-                1. 공감 및 경청(상대방 화 가라앉히기)
-                2. 규정 설명(객관적 사실 전달)
-                3. 대안 제시(우리가 해줄 수 있는 최선)
-                4. 마무리(재발 방지 약속)
-                말투: 비즈니스 매너를 갖추되, 휘둘리지 않는 전문적인 톤.
+                ?�황: ${target}
+                ??��: ?�국경찰?�원 ?�영 ?�장(10?�차 베테?? ?�중?��?�??�호??
+                ?�청: ???�황?�서 ?�생 / ?��?모�? ?��??????�는 '?�???�크립트'�??�성?�주?�요.
+                    ?�계:
+                1. 공감 �?경청(?��?�???가?�앉?�기)
+                2. 규정 ?�명(객�????�실 ?�달)
+                3. ?�???�시(?�리가 ?�줄 ???�는 최선)
+                4. 마무�??�발 방�? ?�속)
+                말투: 비즈?�스 매너�?갖추?? ?�둘리�? ?�는 ?�문?�인 ??
             `;
 
             const aiResponse = await callGeminiAPI(prompt);
@@ -2016,7 +2016,7 @@
             const loading = document.getElementById('feedback-loading');
 
             if (!target) {
-                res.innerText = "상황을 입력해주세요.";
+                res.innerText = "?�황???�력?�주?�요.";
                 res.classList.remove('hidden');
                 return;
             }
@@ -2024,12 +2024,12 @@
             loading.classList.remove('hidden');
             res.classList.add('hidden');
 
-            let promptType = type === 'scold' ? '부드러우면서도 단호하게 행동 교정을 요구하는 피드백(샌드위치 화법)' : '구체적인 사실을 들어 동기부여를 극대화하는 칭찬 피드백';
+            let promptType = type === 'scold' ? '부?�러?�면?�도 ?�호?�게 ?�동 교정???�구?�는 ?�드�??�드?�치 ?�법)' : '구체?�인 ?�실???�어 ?�기부?��? 극�??�하??�?�� ?�드�?;
             const prompt = `
-                상황: ${target}
-                역할: F성향의 운영 실장이 부하 직원에게 말함.
-                    요청: ${promptType} 스크립트를 작성해주세요.
-                        목표: 감정 상하지 않게 하면서 행동 변화를 이끌어내거나 사기를 높이는 것.
+                ?�황: ${target}
+                ??��: F?�향???�영 ?�장??부??직원?�게 말함.
+                    ?�청: ${promptType} ?�크립트�??�성?�주?�요.
+                        목표: 감정 ?�하지 ?�게 ?�면???�동 변?��? ?�끌?�내거나 ?�기�??�이??�?
             `;
 
             const aiResponse = await callGeminiAPI(prompt);
@@ -2051,7 +2051,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h2 class="text-xl font-bold text-slate-800">AI 운영 컨설턴트</h2>
+                                <h2 class="text-xl font-bold text-slate-800">AI ?�영 컨설?�트</h2>
                                 <p class="text-xs text-stone-500">Gemini 3.0 Flash Powered · Manual Grounded</p>
                             </div>
                         </div>
@@ -2060,9 +2060,9 @@
                     <div id="chat-messages" class="flex-grow overflow-y-auto space-y-4 mb-4 p-4 bg-stone-50 rounded-lg border border-stone-100">
                         <div class="flex items-start">
                             <div class="bg-indigo-100 text-indigo-800 p-3 rounded-lg rounded-tl-none max-w-[80%] text-sm">
-                                안녕하세요, 부원장님. <strong>한국경찰학원 AI 운영 파트너</strong>입니다.<br>
-                                조직 운영 매뉴얼에 기반하여 상황별 대처법, 보고 라인, 마케팅 문구 등을 조언해 드립니다.<br>
-                                무엇을 도와드릴까요?
+                                ?�녕?�세?? 부?�장?? <strong>?�국경찰?�원 AI ?�영 ?�트??/strong>?�니??<br>
+                                조직 ?�영 매뉴?�에 기반?�여 ?�황�??�처법, 보고 ?�인, 마�???문구 ?�을 조언???�립?�다.<br>
+                                무엇???��??�릴까요?
                             </div>
                         </div>
                     </div>
@@ -2070,10 +2070,10 @@
                     <div class="flex gap-2">
                         <input type="text" id="chat-input" 
                             class="flex-grow p-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                            placeholder="예: '학생이 환불 규정에 불만을 품고 소리를 지릅니다. 누가 처리해야 하나요?'"
+                            placeholder="?? '?�생???�불 규정??불만???�고 ?�리�?지릅니?? ?��? 처리?�야 ?�나??'"
                             onkeypress="if(event.key === 'Enter') sendChatMessage()">
                         <button onclick="sendChatMessage()" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-indigo-700 transition flex items-center">
-                            전송
+                            ?�송
                         </button>
                     </div>
                 </div>
@@ -2090,7 +2090,7 @@
             // User Message Bubble
             const userBubble = document.createElement('div');
             userBubble.className = "flex items-center justify-end";
-            userBubble.innerHTML = `<div class="bg-slate-800 text-white p-3 rounded-lg rounded-tr-none max-w-[80%] text-sm" > ${userMsg}</div > `;
+            userBubble.innerHTML = `<div class="bg-slate-800 text-white p-3 rounded-lg rounded-tr-none max-w-[80%] text-sm" > ${userMsg}</div> `;
             msgContainer.appendChild(userBubble);
 
             inputEl.value = '';
@@ -2099,7 +2099,7 @@
             // AI Loading Bubble
             const loadingBubble = document.createElement('div');
             loadingBubble.className = "flex items-start ai-response-loading";
-            loadingBubble.innerHTML = `<div class="bg-white border border-stone-200 p-3 rounded-lg rounded-tl-none" > <div class="ai-loading"></div></div > `;
+            loadingBubble.innerHTML = `<div class="bg-white border border-stone-200 p-3 rounded-lg rounded-tl-none" > <div class="ai-loading"></div></div> `;
             msgContainer.appendChild(loadingBubble);
             msgContainer.scrollTop = msgContainer.scrollHeight;
 
@@ -2110,7 +2110,7 @@
             msgContainer.removeChild(loadingBubble);
             const aiBubble = document.createElement('div');
             aiBubble.className = "flex items-start";
-            aiBubble.innerHTML = `<div class="bg-indigo-50 border border-indigo-100 text-slate-800 p-4 rounded-lg rounded-tl-none max-w-[90%] text-sm leading-relaxed shadow-sm" > ${aiText.replace(/\n/g, '<br>')}</div >`;
+            aiBubble.innerHTML = `<div class="bg-indigo-50 border border-indigo-100 text-slate-800 p-4 rounded-lg rounded-tl-none max-w-[90%] text-sm leading-relaxed shadow-sm" > ${aiText.replace(/\n/g, '<br>')}</div>`;
             msgContainer.appendChild(aiBubble);
             msgContainer.scrollTop = msgContainer.scrollHeight;
         }
