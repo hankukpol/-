@@ -773,7 +773,7 @@
         function getRoleBadge(id) {
             const role = appData.roles.find(r => r.id === id);
             // Added onclick for filtering
-            return role ? `<span onclick = "filterTasksByRole('${id}')" class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-800 hover:bg-indigo-100 cursor-pointer border border-transparent hover:border-indigo-300 transition-colors" title = "클릭하여 ${role.title} 업무만 보기" > ${role.icon} ${role.title}</span > ` : '<span class="text-stone-400">-</span>';
+            return role ? `<span onclick="filterTasksByRole('${id}')" class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-800 hover:bg-indigo-100 cursor-pointer border border-transparent hover:border-indigo-300 transition-colors" title="클릭하여 ${role.title} 업무만 보기">${role.icon} ${role.title}</span>` : '<span class="text-stone-400">-</span>';
         }
 
         // --- Task Search & Add View ---
