@@ -1001,7 +1001,10 @@
         }
 
         function closeRoleEditor() {
-            document.getElementById('edit-role-form').classList.add('hidden');
+            const form = document.getElementById('edit-role-form');
+            if (form) {
+                form.classList.add('hidden');
+            }
         }
 
         function saveRoleNames() {
