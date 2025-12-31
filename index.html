@@ -886,14 +886,16 @@
                     </div>
                 </div >
                     `;
-            // Initial render with current filter state - wait for DOM
-            setTimeout(() => {
-                if (activeRoleFilter) {
-                    filterTasksByRole(activeRoleFilter);
-                } else {
-                    renderTaskList(appData.taskRegistry);
-                }
-            }, 100);
+            // Initial render with current filter state - wait for DOM to be fully rendered
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    if (activeRoleFilter) {
+                        filterTasksByRole(activeRoleFilter);
+                    } else {
+                        renderTaskList(appData.taskRegistry);
+                    }
+                });
+            });
         }
 
         function renderTaskList(tasks) {
