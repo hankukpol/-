@@ -201,7 +201,7 @@
         let userApiKey = localStorage.getItem('gemini_api_key') || "";
 
         // Google Sheets Integration
-        let sheetsWebAppUrl = localStorage.getItem('sheets_webapp_url') || "";
+        let sheetsWebAppUrl = localStorage.getItem('sheets_webapp_url') || "https://script.google.com/macros/s/AKfycbyegLIoTBOBzaJeukqv8-cx9lGCdsnHTEBObyk21EQoUfPx01xWT00FmZhUyDOlsEEPBA/exec";
         let syncStatus = { connected: false, syncing: false, lastSync: null };
         const sheetsProxyBase = '/.netlify/functions/sheets-proxy';
 
