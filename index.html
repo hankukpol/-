@@ -1067,11 +1067,24 @@
         }
 
         function saveTask() {
-            const id = document.getElementById('edit-task-id').value;
-            const cat = document.getElementById('new-cat').value;
-            const task = document.getElementById('new-task').value;
-            const main = document.getElementById('new-main').value;
-            const sub = document.getElementById('new-sub').value;
+            const idEl = document.getElementById('edit-task-id');
+            const catEl = document.getElementById('new-cat');
+            const taskEl = document.getElementById('new-task');
+            const mainEl = document.getElementById('new-main');
+            const subEl = document.getElementById('new-sub');
+
+            // Null check
+            if (!idEl || !catEl || !taskEl || !mainEl || !subEl) {
+                console.error('Task form elements not found');
+                alert('양식을 찾을 수 없습니다. 페이지를 새로고침해주세요.');
+                return;
+            }
+
+            const id = idEl.value;
+            const cat = catEl.value;
+            const task = taskEl.value;
+            const main = mainEl.value;
+            const sub = subEl.value;
 
             if (!cat || !task || !main) {
                 alert("카테고리, 업무 내용, 정(Main) 담당은 필수입니다.");
