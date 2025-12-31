@@ -431,7 +431,11 @@
         };
 
         // --- Active Data (Mutable) ---
-        let appData = {};
+        let appData = {
+            roles: [],
+            taskRegistry: [],
+            principles: []
+        };
 
         // Global state for filtering
         let activeRoleFilter = null;
