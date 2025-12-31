@@ -1293,8 +1293,15 @@
         }
 
         function toggleRoleDetails(id) {
-            const el = document.getElementById(`details - ${id} `);
-            const icon = document.getElementById(`icon - ${id} `);
+            const el = document.getElementById(`details-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+
+            // Null check
+            if (!el || !icon) {
+                console.warn(`Role details elements not found for id: ${id}`);
+                return;
+            }
+
             if (el.classList.contains('hidden')) {
                 el.classList.remove('hidden');
                 icon.innerText = '▲';
